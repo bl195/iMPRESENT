@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var check_in_button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        check_in_button.layer.cornerRadius = 10
+        check_in_button.clipsToBounds = true
     }
 
 
