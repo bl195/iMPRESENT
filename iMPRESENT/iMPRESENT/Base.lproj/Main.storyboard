@@ -27,9 +27,12 @@
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rv-XG-cvJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rv-XG-cvJ">
                                 <rect key="frame" x="29" y="294" width="196" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="A8k-uF-msH"/>
+                                    <constraint firstAttribute="width" constant="196" id="kgo-ey-AlZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Compasstionate">
@@ -37,9 +40,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wur-RS-bm4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wur-RS-bm4">
                                 <rect key="frame" x="29" y="364" width="162" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Oyn-ae-JK1"/>
+                                    <constraint firstAttribute="width" constant="162" id="aLK-GM-Qvf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="At Peace">
@@ -47,9 +53,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7q-Om-DcH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7q-Om-DcH">
                                 <rect key="frame" x="29" y="644" width="162" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="7IT-Fi-6pC"/>
+                                    <constraint firstAttribute="height" constant="53" id="bTy-0o-1kd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Scared">
@@ -57,9 +66,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ey-r1-1gN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ey-r1-1gN">
                                 <rect key="frame" x="29" y="784" width="179" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="24V-a8-ejX"/>
+                                    <constraint firstAttribute="width" constant="179" id="VqK-g7-SRO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Frustrated">
@@ -67,9 +79,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d0-I7-avZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d0-I7-avZ">
                                 <rect key="frame" x="29" y="434" width="149" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="EL7-4b-EaE"/>
+                                    <constraint firstAttribute="height" constant="53" id="LmT-iN-2Bd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Uncertain">
@@ -77,9 +92,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUR-I3-BFI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUR-I3-BFI">
                                 <rect key="frame" x="29" y="574" width="149" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="02W-jP-77b"/>
+                                    <constraint firstAttribute="width" constant="149" id="iBU-BZ-5NM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Anxious">
@@ -87,9 +105,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6n-oJ-tB5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6n-oJ-tB5">
                                 <rect key="frame" x="29" y="504" width="88" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="SAn-m0-HlT"/>
+                                    <constraint firstAttribute="width" constant="88" id="mx2-tp-bhY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Sad">
@@ -97,9 +118,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZF-7p-Tv5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZF-7p-Tv5">
                                 <rect key="frame" x="140" y="504" width="100" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="BcL-vk-VzV"/>
+                                    <constraint firstAttribute="width" constant="100" id="iuX-Hf-lMH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Lonely">
@@ -107,9 +131,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so7-nb-Oaz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so7-nb-Oaz">
                                 <rect key="frame" x="264" y="504" width="130" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="2uE-pe-aRm"/>
+                                    <constraint firstAttribute="height" constant="53" id="sdH-GB-uSW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Stressed">
@@ -117,9 +144,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B1-1C-vZp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B1-1C-vZp">
                                 <rect key="frame" x="212" y="364" width="173" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="RMu-Lj-lY9"/>
+                                    <constraint firstAttribute="height" constant="53" id="UPw-sG-iWZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Hopeful">
@@ -127,9 +157,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1K-WS-cDK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1K-WS-cDK">
                                 <rect key="frame" x="212" y="644" width="173" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="BN7-dH-9bv"/>
+                                    <constraint firstAttribute="width" constant="173" id="nE3-Q7-fdq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Shameful">
@@ -137,9 +170,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie5-3I-D97">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie5-3I-D97">
                                 <rect key="frame" x="200" y="434" width="185" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="hWZ-2E-7ee"/>
+                                    <constraint firstAttribute="width" constant="185" id="jCG-ir-FUX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Resilient">
@@ -147,9 +183,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eba-H9-Vdd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eba-H9-Vdd">
                                 <rect key="frame" x="200" y="574" width="185" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="e0J-SJ-Umx"/>
+                                    <constraint firstAttribute="width" constant="185" id="rDs-Aj-cOy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Gloomy">
@@ -157,9 +196,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfN-Tn-kqG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfN-Tn-kqG">
                                 <rect key="frame" x="247" y="294" width="138" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="3hO-Mc-DSj"/>
+                                    <constraint firstAttribute="width" constant="138" id="p3T-QK-dUn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Joyful">
@@ -167,9 +209,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC5-vF-xgl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC5-vF-xgl">
                                 <rect key="frame" x="247" y="714" width="138" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="Iiq-HV-iFT"/>
+                                    <constraint firstAttribute="height" constant="53" id="o00-1g-2c1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Angry">
@@ -177,9 +222,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcC-AD-25E">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcC-AD-25E">
                                 <rect key="frame" x="29" y="714" width="196" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="BjX-3A-jlk"/>
+                                    <constraint firstAttribute="width" constant="196" id="xHj-jQ-BfY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Out of Control">
@@ -187,9 +235,12 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtO-xW-L8G">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtO-xW-L8G">
                                 <rect key="frame" x="229" y="784" width="156" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="J2L-l1-kZk"/>
+                                    <constraint firstAttribute="width" constant="156" id="fwz-Kd-0YG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Resilient">
@@ -200,13 +251,52 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gZF-7p-Tv5" firstAttribute="top" secondItem="8d0-I7-avZ" secondAttribute="bottom" constant="17" id="0rn-fD-Bur"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ie5-3I-D97" secondAttribute="trailing" constant="29" id="15A-E1-4qz"/>
+                            <constraint firstItem="BUR-I3-BFI" firstAttribute="top" secondItem="gZF-7p-Tv5" secondAttribute="bottom" constant="17" id="1jB-8D-xtk"/>
+                            <constraint firstItem="ie5-3I-D97" firstAttribute="top" secondItem="4B1-1C-vZp" secondAttribute="bottom" constant="17" id="43Z-hN-sq2"/>
+                            <constraint firstItem="Wur-RS-bm4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="4Sz-zp-mFM"/>
+                            <constraint firstItem="PtO-xW-L8G" firstAttribute="leading" secondItem="0ey-r1-1gN" secondAttribute="trailing" constant="21" id="5LR-R8-0fI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OfN-Tn-kqG" secondAttribute="trailing" constant="29" id="6MZ-7f-9zQ"/>
+                            <constraint firstItem="V1K-WS-cDK" firstAttribute="top" secondItem="Eba-H9-Vdd" secondAttribute="bottom" constant="17" id="7wT-gM-oMH"/>
+                            <constraint firstItem="V6n-oJ-tB5" firstAttribute="top" secondItem="8d0-I7-avZ" secondAttribute="bottom" constant="17" id="8R9-0G-Vfz"/>
                             <constraint firstItem="6aY-EW-BXl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AXy-LV-Thn"/>
+                            <constraint firstItem="4B1-1C-vZp" firstAttribute="leading" secondItem="Wur-RS-bm4" secondAttribute="trailing" constant="21" id="AqZ-4e-0gz"/>
+                            <constraint firstItem="sC5-vF-xgl" firstAttribute="top" secondItem="V1K-WS-cDK" secondAttribute="bottom" constant="17" id="D76-CB-mCJ"/>
+                            <constraint firstItem="6rv-XG-cvJ" firstAttribute="top" relation="lessThanOrEqual" secondItem="mw4-1u-58Z" secondAttribute="bottom" constant="94" id="EkU-0J-AlX"/>
                             <constraint firstItem="mw4-1u-58Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="Euo-M9-RwC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="so7-nb-Oaz" secondAttribute="trailing" constant="20" id="Fp9-st-nEe"/>
+                            <constraint firstItem="gZF-7p-Tv5" firstAttribute="leading" secondItem="V6n-oJ-tB5" secondAttribute="trailing" constant="23" id="JNJ-zf-N3X"/>
+                            <constraint firstItem="CcC-AD-25E" firstAttribute="top" secondItem="k7q-Om-DcH" secondAttribute="bottom" constant="17" id="Jog-8Z-rVs"/>
                             <constraint firstAttribute="bottom" secondItem="6aY-EW-BXl" secondAttribute="bottom" id="KDe-F3-7L9"/>
-                            <constraint firstItem="mw4-1u-58Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Ryt-zQ-2fH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="PtO-xW-L8G" secondAttribute="bottom" constant="25" id="Kdo-cl-BRj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sC5-vF-xgl" secondAttribute="trailing" constant="29" id="MeB-zZ-XiZ"/>
+                            <constraint firstItem="sC5-vF-xgl" firstAttribute="leading" secondItem="CcC-AD-25E" secondAttribute="trailing" constant="22" id="Oi1-c3-5Xk"/>
+                            <constraint firstItem="4B1-1C-vZp" firstAttribute="top" secondItem="OfN-Tn-kqG" secondAttribute="bottom" constant="17" id="PAL-e0-5Mo"/>
+                            <constraint firstItem="BUR-I3-BFI" firstAttribute="top" secondItem="V6n-oJ-tB5" secondAttribute="bottom" constant="17" id="QUu-fR-7Qn"/>
+                            <constraint firstItem="mw4-1u-58Z" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Ryt-zQ-2fH"/>
+                            <constraint firstItem="V1K-WS-cDK" firstAttribute="leading" secondItem="k7q-Om-DcH" secondAttribute="trailing" constant="21" id="XmA-m2-uvC"/>
+                            <constraint firstItem="so7-nb-Oaz" firstAttribute="top" secondItem="ie5-3I-D97" secondAttribute="bottom" constant="17" id="XpG-iT-2LD"/>
+                            <constraint firstItem="so7-nb-Oaz" firstAttribute="leading" secondItem="gZF-7p-Tv5" secondAttribute="trailing" constant="24" id="YSW-Dd-dB0"/>
+                            <constraint firstItem="k7q-Om-DcH" firstAttribute="top" secondItem="BUR-I3-BFI" secondAttribute="bottom" constant="17" id="b0B-B7-2bO"/>
+                            <constraint firstItem="OfN-Tn-kqG" firstAttribute="leading" secondItem="6rv-XG-cvJ" secondAttribute="trailing" constant="22" id="cRe-gz-Dac"/>
+                            <constraint firstItem="V6n-oJ-tB5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="cUQ-I9-nfm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V1K-WS-cDK" secondAttribute="trailing" constant="29" id="cWc-WK-aDH"/>
+                            <constraint firstItem="OfN-Tn-kqG" firstAttribute="top" relation="lessThanOrEqual" secondItem="mw4-1u-58Z" secondAttribute="bottom" constant="94" id="eVg-59-icf"/>
+                            <constraint firstItem="Eba-H9-Vdd" firstAttribute="leading" secondItem="BUR-I3-BFI" secondAttribute="trailing" constant="22" id="h70-Z2-J6m"/>
+                            <constraint firstItem="Eba-H9-Vdd" firstAttribute="top" secondItem="so7-nb-Oaz" secondAttribute="bottom" constant="17" id="hGQ-Nt-elm"/>
+                            <constraint firstItem="0ey-r1-1gN" firstAttribute="top" secondItem="CcC-AD-25E" secondAttribute="bottom" constant="17" id="ims-me-rWM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PtO-xW-L8G" secondAttribute="trailing" constant="29" id="lhI-dL-QEL"/>
+                            <constraint firstItem="PtO-xW-L8G" firstAttribute="top" secondItem="sC5-vF-xgl" secondAttribute="bottom" constant="17" id="mja-dr-duq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mw4-1u-58Z" secondAttribute="trailing" constant="56" id="o8j-33-3Kr"/>
+                            <constraint firstItem="6rv-XG-cvJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="pL2-27-7kK"/>
                             <constraint firstItem="6aY-EW-BXl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rH4-iB-eOS"/>
+                            <constraint firstItem="Wur-RS-bm4" firstAttribute="top" secondItem="6rv-XG-cvJ" secondAttribute="bottom" constant="17" id="rh6-6C-GzM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="0ey-r1-1gN" secondAttribute="bottom" constant="25" id="sl2-pX-URk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eba-H9-Vdd" secondAttribute="trailing" constant="29" id="vr4-Hy-ZEg"/>
                             <constraint firstItem="6aY-EW-BXl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wWM-Pe-bWw"/>
+                            <constraint firstItem="8d0-I7-avZ" firstAttribute="top" secondItem="Wur-RS-bm4" secondAttribute="bottom" constant="17" id="xSD-uF-E17"/>
+                            <constraint firstItem="ie5-3I-D97" firstAttribute="leading" secondItem="8d0-I7-avZ" secondAttribute="trailing" constant="22" id="xgj-8j-kp0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
