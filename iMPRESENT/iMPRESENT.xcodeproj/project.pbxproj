@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2581669F2366436D0039FDE1 /* LuizaTemp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2581669E2366436D0039FDE1 /* LuizaTemp.storyboard */; };
+		258166A1236645EF0039FDE1 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258166A0236645EF0039FDE1 /* MainTableViewController.swift */; };
 		C7AC6A8923663D2F00542250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC6A8823663D2F00542250 /* AppDelegate.swift */; };
 		C7AC6A8B23663D2F00542250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC6A8A23663D2F00542250 /* ViewController.swift */; };
 		C7AC6A8E23663D2F00542250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AC6A8C23663D2F00542250 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2581669E2366436D0039FDE1 /* LuizaTemp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LuizaTemp.storyboard; sourceTree = "<group>"; };
+		258166A0236645EF0039FDE1 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		C7AC6A8523663D2F00542250 /* iMPRESENT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMPRESENT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AC6A8823663D2F00542250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7AC6A8A23663D2F00542250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +109,9 @@
 			children = (
 				C7AC6A8823663D2F00542250 /* AppDelegate.swift */,
 				C7AC6A8A23663D2F00542250 /* ViewController.swift */,
+				258166A0236645EF0039FDE1 /* MainTableViewController.swift */,
 				C7AC6A8C23663D2F00542250 /* Main.storyboard */,
+				2581669E2366436D0039FDE1 /* LuizaTemp.storyboard */,
 				C7AC6A8F23663D3100542250 /* Assets.xcassets */,
 				C7AC6A9123663D3100542250 /* LaunchScreen.storyboard */,
 				C7AC6A9423663D3100542250 /* Info.plist */,
@@ -240,6 +246,7 @@
 			files = (
 				C7AC6A9323663D3100542250 /* LaunchScreen.storyboard in Resources */,
 				C7AC6A9023663D3100542250 /* Assets.xcassets in Resources */,
+				2581669F2366436D0039FDE1 /* LuizaTemp.storyboard in Resources */,
 				C7AC6A8E23663D2F00542250 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 				C80F9A08237F1F5800488E69 /* CustomSlider.swift in Sources */,
 				C8A2C6F4236692F500411435 /* StressLevelViewController.swift in Sources */,
 				C7AC6A8B23663D2F00542250 /* ViewController.swift in Sources */,
+				258166A1236645EF0039FDE1 /* MainTableViewController.swift in Sources */,
 				C7AC6A8923663D2F00542250 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
