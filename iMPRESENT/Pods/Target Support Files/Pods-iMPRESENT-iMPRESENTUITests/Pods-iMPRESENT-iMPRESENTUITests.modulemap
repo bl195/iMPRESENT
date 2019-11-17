@@ -1,0 +1,6 @@
+framework module Pods_iMPRESENT_iMPRESENTUITests {
+  umbrella header "Pods-iMPRESENT-iMPRESENTUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

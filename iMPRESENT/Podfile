@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'iMPRESENT' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for iMPRESENT
+
+  target 'iMPRESENTTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'iMPRESENTUITests' do
+    # Pods for testing
+  end
+
+  source 'https://github.com/CoreKit/CocoaPods.git'
+  pod 'CollectionView', '~> 2.0.0'
+
+end

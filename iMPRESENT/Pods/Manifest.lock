@@ -1,0 +1,16 @@
+PODS:
+  - CollectionView (2.0.1)
+
+DEPENDENCIES:
+  - CollectionView (~> 2.0.0)
+
+SPEC REPOS:
+  https://github.com/CoreKit/CocoaPods.git:
+    - CollectionView
+
+SPEC CHECKSUMS:
+  CollectionView: 6ae68f03a9a1e0a4d5932423e18a7b5501599492
+
+PODFILE CHECKSUM: 479138c5202769defbfa57fad92948370d85f11d
+
+COCOAPODS: 1.8.4
