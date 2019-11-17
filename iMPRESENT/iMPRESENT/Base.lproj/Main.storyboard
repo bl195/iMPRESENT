@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M98-t8-5Eh">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -354,7 +354,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MeditationCellReuseIdentifier" id="47h-wf-XvS">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MeditationCellReuseIdentifier" id="47h-wf-XvS" customClass="MeditationCollectionViewCell" customModule="iMPRESENT" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -363,9 +363,13 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="M98-t8-5Eh" id="vpv-Cc-FA4"/>
+                                    <outlet property="delegate" destination="M98-t8-5Eh" id="rPW-lc-wxe"/>
+                                </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover more" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh1-rD-Rfs">
-                                <rect key="frame" x="19" y="388" width="174" height="27"/>
+                                <rect key="frame" x="19" y="375" width="174" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="Vdl-L4-K1o"/>
                                 </constraints>
@@ -388,8 +392,8 @@
                             <constraint firstItem="FUv-Jr-1ga" firstAttribute="leading" secondItem="OGf-gj-b4u" secondAttribute="leading" constant="19" id="ah5-1y-ErA"/>
                             <constraint firstItem="0q1-Im-l6X" firstAttribute="leading" secondItem="qh1-rD-Rfs" secondAttribute="leading" id="bgt-qf-Ig7"/>
                             <constraint firstItem="OGf-gj-b4u" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qh1-rD-Rfs" secondAttribute="trailing" symbolic="YES" id="csW-eh-OPw"/>
-                            <constraint firstItem="qh1-rD-Rfs" firstAttribute="top" secondItem="ueM-gk-pDg" secondAttribute="bottom" constant="34" id="q0Q-ir-5QD"/>
-                            <constraint firstItem="0q1-Im-l6X" firstAttribute="top" secondItem="qh1-rD-Rfs" secondAttribute="bottom" constant="8" symbolic="YES" id="tex-v9-hvE"/>
+                            <constraint firstItem="qh1-rD-Rfs" firstAttribute="top" secondItem="ueM-gk-pDg" secondAttribute="bottom" constant="21" id="q0Q-ir-5QD"/>
+                            <constraint firstItem="0q1-Im-l6X" firstAttribute="top" secondItem="qh1-rD-Rfs" secondAttribute="bottom" constant="21" id="tex-v9-hvE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OGf-gj-b4u"/>
                     </view>

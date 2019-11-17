@@ -17,7 +17,7 @@ class PastMeditationCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = UIColor(red: 243/255, green: 242/255, blue: 241/255, alpha: 1.0)
+        self.backgroundColor = UIColor(red: 243/255, green: 242/255, blue: 241/255, alpha: 0.8)
         self.nameLabel.textColor = fontcolor
         self.heightAnchor.constraint(equalToConstant: 110).isActive = true
         self.widthAnchor.constraint(equalToConstant: 155).isActive = true

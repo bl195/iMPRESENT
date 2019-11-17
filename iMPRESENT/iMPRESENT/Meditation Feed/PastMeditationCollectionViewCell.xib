@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PastMeditationCell" id="gTV-IL-0wX" customClass="PastMeditationCollectionViewCell" customModule="iMPRESENT" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PastMeditationCell" id="0zW-08-j1w" customClass="PastMeditationCollectionViewCell" customModule="iMPRESENT">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="110"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="155" height="110"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bce-eG-02O">
-                        <rect key="frame" x="4" y="15" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZx-rx-kf4">
+                        <rect key="frame" x="4" y="45" width="147" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -28,15 +28,17 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="bce-eG-02O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="GBl-lw-ox1"/>
-                <constraint firstAttribute="bottom" secondItem="bce-eG-02O" secondAttribute="bottom" constant="14" id="Y3v-jW-nWl"/>
-                <constraint firstItem="bce-eG-02O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="jeH-bU-gVR"/>
-                <constraint firstAttribute="trailing" secondItem="bce-eG-02O" secondAttribute="trailing" constant="4" id="zg7-dj-KG0"/>
+                <constraint firstAttribute="trailing" secondItem="ZZx-rx-kf4" secondAttribute="trailing" constant="4" id="3k5-Nk-S47"/>
+                <constraint firstItem="ZZx-rx-kf4" firstAttribute="centerY" secondItem="0zW-08-j1w" secondAttribute="centerY" id="80X-xa-eWX"/>
+                <constraint firstItem="ZZx-rx-kf4" firstAttribute="centerY" secondItem="0zW-08-j1w" secondAttribute="centerY" id="bOl-ft-nz2"/>
+                <constraint firstItem="ZZx-rx-kf4" firstAttribute="centerX" secondItem="0zW-08-j1w" secondAttribute="centerX" id="oNG-qe-2hE"/>
+                <constraint firstItem="ZZx-rx-kf4" firstAttribute="leading" secondItem="0zW-08-j1w" secondAttribute="leading" constant="4" id="vMb-LP-RCv"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <viewLayoutGuide key="safeArea" id="Nvg-ti-V9E"/>
             <connections>
-                <outlet property="nameLabel" destination="bce-eG-02O" id="Mcz-D9-Dfs"/>
+                <outlet property="nameLabel" destination="ZZx-rx-kf4" id="pMk-T1-H3E"/>
             </connections>
+            <point key="canvasLocation" x="4" y="42"/>
         </collectionViewCell>
     </objects>
 </document>

@@ -21,8 +21,8 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
-        collectionView.contentInset = UIEdgeInsets.init(top: 0, left: 15, bottom: 0, right: 15) 
-        discoverMoreCollectionView.contentInset = UIEdgeInsets.init(top: 0, left: 5, bottom: 0, right: 5)
+        collectionView.contentInset = UIEdgeInsets.init(top: 25, left: 15, bottom: 0, right: 15)
+        discoverMoreCollectionView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
         discoverMoreCollectionView.backgroundColor = .clear
         discoverMoreCollectionView.backgroundView?.backgroundColor = .clear
         // Do any additional setup after loading the view.

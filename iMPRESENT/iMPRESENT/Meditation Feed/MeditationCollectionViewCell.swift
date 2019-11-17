@@ -20,8 +20,8 @@ class MeditationCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         self.backgroundColor = UIColor(red: 243/255, green: 242/255, blue: 241/255, alpha: 1.0)
         self.title.textColor = fontcolor
-        self.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        self.widthAnchor.constraint(equalToConstant: 170).isActive = true
+        self.heightAnchor.constraint(equalToConstant: 210).isActive = true
+        self.widthAnchor.constraint(equalToConstant: 175).isActive = true
         self.layer.cornerRadius = 30.0
     }
     

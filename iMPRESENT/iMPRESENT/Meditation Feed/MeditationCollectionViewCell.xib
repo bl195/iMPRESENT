@@ -12,40 +12,43 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MeditationCellReuseIdentifier" id="gTV-IL-0wX" customClass="MeditationCollectionViewCell" customModule="iMPRESENT" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MeditationCellReuseIdentifier" id="o8g-ED-gxA" customClass="MeditationCollectionViewCell" customModule="iMPRESENT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML0-zp-v0c">
-                        <rect key="frame" x="0.0" y="9" width="42" height="21"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wgj-ef-3VB">
+                        <rect key="frame" x="24.5" y="20.5" width="111" height="108"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="111" id="s3q-Z7-B6Y"/>
+                            <constraint firstAttribute="height" constant="108" id="tPA-6T-XAQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sje-Ce-Mz7">
+                        <rect key="frame" x="0.0" y="137" width="160" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="aBr-0Z-5Qs"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HXt-ov-2aR">
-                        <rect key="frame" x="6" y="38" width="14" height="12"/>
-                    </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="ML0-zp-v0c" secondAttribute="trailing" constant="8" id="3Jk-Yy-krj"/>
-                <constraint firstItem="HXt-ov-2aR" firstAttribute="top" secondItem="ML0-zp-v0c" secondAttribute="bottom" constant="8" id="NDd-0I-vaF"/>
-                <constraint firstAttribute="bottom" secondItem="HXt-ov-2aR" secondAttribute="bottom" id="OdN-Sf-k37"/>
-                <constraint firstItem="ML0-zp-v0c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Tmp-7F-Lrz"/>
-                <constraint firstItem="HXt-ov-2aR" firstAttribute="top" secondItem="ML0-zp-v0c" secondAttribute="bottom" constant="8" id="UHh-yM-LZS"/>
-                <constraint firstItem="HXt-ov-2aR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="bSn-tX-R61"/>
-                <constraint firstItem="ML0-zp-v0c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="cKr-Ca-qrB"/>
-                <constraint firstAttribute="trailing" secondItem="HXt-ov-2aR" secondAttribute="trailing" constant="30" id="xhD-yi-5Ne"/>
+                <constraint firstItem="sje-Ce-Mz7" firstAttribute="centerX" secondItem="o8g-ED-gxA" secondAttribute="centerX" id="IDd-bZ-bTW"/>
+                <constraint firstItem="sje-Ce-Mz7" firstAttribute="top" secondItem="Wgj-ef-3VB" secondAttribute="bottom" constant="15" id="UlA-Bm-XAZ"/>
+                <constraint firstItem="Wgj-ef-3VB" firstAttribute="centerX" secondItem="o8g-ED-gxA" secondAttribute="centerX" id="cgE-Lx-rM1"/>
+                <constraint firstAttribute="bottom" secondItem="sje-Ce-Mz7" secondAttribute="bottom" constant="36" id="oGW-B9-DTS"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <viewLayoutGuide key="safeArea" id="Rh0-ks-wtx"/>
             <connections>
-                <outlet property="image" destination="HXt-ov-2aR" id="3WQ-Nc-gj3"/>
-                <outlet property="title" destination="ML0-zp-v0c" id="oLY-2w-6tb"/>
+                <outlet property="image" destination="Wgj-ef-3VB" id="hY1-Ag-so3"/>
+                <outlet property="title" destination="sje-Ce-Mz7" id="doN-M8-X4e"/>
             </connections>
-            <point key="canvasLocation" x="47.826086956521742" y="72.991071428571431"/>
+            <point key="canvasLocation" x="126" y="80"/>
         </collectionViewCell>
     </objects>
 </document>
