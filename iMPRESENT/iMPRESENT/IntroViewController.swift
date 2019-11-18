@@ -10,15 +10,28 @@ import UIKit
 
 class IntroViewController: UIViewController {
 
-    @IBOutlet weak var play_button: UIButton!
+    @IBOutlet weak var introLabel: UILabel!
+    
+    @IBOutlet weak var meditationLabel: UILabel!
+    
+    @IBOutlet weak var flowerImage: UIImageView!
+    
+    @IBOutlet weak var playVideoButton: UIButton!
+    
+    @IBOutlet weak var nextArrow: UIButton!
     
     override func viewDidLoad() {
+        playVideoButton.layer.cornerRadius = playVideoButton.bounds.height/2
+        playVideoButton.clipsToBounds = true
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func playVideo(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.youtube.com/watch?v=CmhkmLFc74E")!, options: [:], completionHandler: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

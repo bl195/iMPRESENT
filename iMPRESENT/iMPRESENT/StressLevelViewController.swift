@@ -11,6 +11,7 @@ import UIKit
 class StressLevelViewController: UIViewController {
     
 
+    @IBOutlet weak var stressLevel: UILabel!
     
     @IBOutlet weak var stress_slider_level: UISlider!
      var happyfaceImage = UIImage(named: "happyface")
@@ -19,10 +20,10 @@ class StressLevelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        stress_slider_level.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / 2))
+        //stress_slider_level.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / 2))
         
-        happyfaceImage = happyfaceImage?.rotate(radians: -1.0*(.pi / 2))
-        sadfaceImage = sadfaceImage?.rotate(radians: -1.0*(.pi / 2))
+//        happyfaceImage = happyfaceImage?.rotate(radians: -1.0*(.pi / 2))
+//        sadfaceImage = sadfaceImage?.rotate(radians: -1.0*(.pi / 2))
         
         changeSliderImage(img: happyfaceImage!)
         
@@ -35,6 +36,9 @@ class StressLevelViewController: UIViewController {
     
     @IBAction func sliderAction(_ sender: Any) {
         print(round (stress_slider_level.value))
+       let float = round (stress_slider_level.value)
+        stressLevel.text = "\(float)"
+        
         let slider_val = round (stress_slider_level.value)
         
         if (slider_val < 5) {
