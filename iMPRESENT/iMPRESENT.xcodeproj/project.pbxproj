@@ -23,6 +23,7 @@
 		C7AC6A9323663D3100542250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AC6A9123663D3100542250 /* LaunchScreen.storyboard */; };
 		C7AC6A9E23663D3100542250 /* iMPRESENTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC6A9D23663D3100542250 /* iMPRESENTTests.swift */; };
 		C7AC6AA923663D3100542250 /* iMPRESENTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC6AA823663D3100542250 /* iMPRESENTUITests.swift */; };
+		C7BBF009238384980083DCED /* feelingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BBF008238384980083DCED /* feelingViewController.swift */; };
 		C80F9A08237F1F5800488E69 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F9A07237F1F5800488E69 /* CustomSlider.swift */; };
 		C8A2C6F223664B1600411435 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2C6F123664B1600411435 /* IntroViewController.swift */; };
 		C8A2C6F4236692F500411435 /* StressLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2C6F3236692F500411435 /* StressLevelViewController.swift */; };
@@ -68,6 +69,7 @@
 		C7AC6AA423663D3100542250 /* iMPRESENTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMPRESENTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AC6AA823663D3100542250 /* iMPRESENTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMPRESENTUITests.swift; sourceTree = "<group>"; };
 		C7AC6AAA23663D3100542250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7BBF008238384980083DCED /* feelingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feelingViewController.swift; sourceTree = "<group>"; };
 		C80F9A07237F1F5800488E69 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		C8A2C6F123664B1600411435 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		C8A2C6F3236692F500411435 /* StressLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				C7AC6A8823663D2F00542250 /* AppDelegate.swift */,
 				C7AC6A8A23663D2F00542250 /* ViewController.swift */,
 				258166A0236645EF0039FDE1 /* MainTableViewController.swift */,
+				C7BBF008238384980083DCED /* feelingViewController.swift */,
 				C7AC6A8C23663D2F00542250 /* Main.storyboard */,
 				BEDC204C2381A5540066333F /* Meditation Feed */,
 				2581669E2366436D0039FDE1 /* LuizaTemp.storyboard */,
@@ -310,6 +313,7 @@
 				BEF46ACE2381ACB200D57635 /* PastMeditationCollectionViewCell.swift in Sources */,
 				BEF46AD32381D80A00D57635 /* Items.swift in Sources */,
 				BEF46AD12381D70300D57635 /* Meditation.swift in Sources */,
+				C7BBF009238384980083DCED /* feelingViewController.swift in Sources */,
 				C7AC6A8B23663D2F00542250 /* ViewController.swift in Sources */,
 				BEF46ACA2381ACA500D57635 /* MeditationCollectionViewCell.swift in Sources */,
 				258166A1236645EF0039FDE1 /* MainTableViewController.swift in Sources */,

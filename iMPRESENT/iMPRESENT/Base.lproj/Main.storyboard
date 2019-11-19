@@ -449,10 +449,10 @@
             </objects>
             <point key="canvasLocation" x="2442" y="120"/>
         </scene>
-        <!--View Controller-->
+        <!--Feeling View Controller-->
         <scene sceneID="t2y-vu-Vx9">
             <objects>
-                <viewController id="HJO-b7-7sj" customClass="ViewController" customModule="iMPRESENT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HJO-b7-7sj" customClass="feelingViewController" customModule="iMPRESENT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YxP-rc-x9g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -740,33 +740,33 @@
                         <viewLayoutGuide key="safeArea" id="jag-8p-fvd"/>
                     </view>
                     <connections>
-                        <outlet property="a" destination="isB-ch-N1g" id="bsj-qp-fdz"/>
-                        <outlet property="an" destination="zd6-6S-fEg" id="7py-bN-oTW"/>
-                        <outlet property="compassionate" destination="sqd-Pb-sFs" id="jze-Tw-Hc7"/>
-                        <outlet property="f" destination="49w-8E-S4g" id="5La-5r-DO9"/>
-                        <outlet property="g" destination="LLY-PG-nWg" id="8XW-JC-Btn"/>
-                        <outlet property="h" destination="Muv-Qv-BdX" id="kRn-VF-luE"/>
-                        <outlet property="joyful" destination="Chu-nY-KaV" id="NgE-Id-8pB"/>
-                        <outlet property="l" destination="rIQ-92-cb4" id="bzT-ze-iWK"/>
-                        <outlet property="o" destination="l01-80-gvp" id="AAe-bK-ADd"/>
-                        <outlet property="p" destination="2Td-Pb-eej" id="pDt-pF-BAR"/>
-                        <outlet property="r" destination="G7g-OW-DG1" id="GTa-uG-Iru"/>
-                        <outlet property="re" destination="Uth-0l-DZp" id="cin-Q4-zQc"/>
-                        <outlet property="s" destination="sTA-bc-8HO" id="JuG-6x-n8x"/>
-                        <outlet property="sc" destination="Glz-1V-s7Q" id="wOP-OW-9qc"/>
-                        <outlet property="sh" destination="A5T-Qb-vFv" id="BNp-es-P47"/>
-                        <outlet property="st" destination="wKE-ep-GCP" id="iOW-kC-dJq"/>
-                        <outlet property="u" destination="Zpe-dh-0rf" id="dFl-yU-5fm"/>
+                        <outlet property="a" destination="isB-ch-N1g" id="cyc-8v-Syh"/>
+                        <outlet property="an" destination="zd6-6S-fEg" id="gJl-Uz-gLE"/>
+                        <outlet property="compassionate" destination="sqd-Pb-sFs" id="aJa-4L-wkM"/>
+                        <outlet property="f" destination="49w-8E-S4g" id="7Wc-S3-0Do"/>
+                        <outlet property="g" destination="LLY-PG-nWg" id="fkV-kh-4iF"/>
+                        <outlet property="h" destination="Muv-Qv-BdX" id="gw1-rD-BSS"/>
+                        <outlet property="joyful" destination="Chu-nY-KaV" id="ikA-Hl-igP"/>
+                        <outlet property="l" destination="rIQ-92-cb4" id="xj3-dG-bzm"/>
+                        <outlet property="o" destination="l01-80-gvp" id="pdV-Mc-FCi"/>
+                        <outlet property="p" destination="2Td-Pb-eej" id="mUr-p9-aBc"/>
+                        <outlet property="r" destination="G7g-OW-DG1" id="zGT-3k-ImY"/>
+                        <outlet property="re" destination="Uth-0l-DZp" id="GZT-Ul-LvT"/>
+                        <outlet property="s" destination="sTA-bc-8HO" id="P2a-1g-4At"/>
+                        <outlet property="sc" destination="Glz-1V-s7Q" id="dsH-gI-RPm"/>
+                        <outlet property="sh" destination="A5T-Qb-vFv" id="aX0-8x-8cE"/>
+                        <outlet property="st" destination="wKE-ep-GCP" id="ozF-UZ-kMJ"/>
+                        <outlet property="u" destination="Zpe-dh-0rf" id="eMX-E6-raq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQD-Pc-KNM" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="106" y="807"/>
         </scene>
-        <!--View Controller-->
+        <!--Feeling View Controller-->
         <scene sceneID="Kes-7e-YB4">
             <objects>
-                <viewController id="tlj-Bo-sLE" sceneMemberID="viewController">
+                <viewController id="tlj-Bo-sLE" customClass="feelingViewController" customModule="iMPRESENT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cBC-W6-hwd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

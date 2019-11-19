@@ -26,6 +26,32 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var teardropImg: UIImageView!
     
+        @IBOutlet weak var joyful: UIButton!
+     
+        @IBOutlet weak var compassionate: UIButton!
+        @IBOutlet weak var p: UIButton!
+        @IBOutlet weak var h: UIButton!
+        @IBOutlet weak var u: UIButton!
+        @IBOutlet weak var r: UIButton!
+        @IBOutlet weak var s: UIButton!
+        @IBOutlet weak var l: UIButton!
+        
+        @IBOutlet weak var st: UIButton!
+        @IBOutlet weak var sc: UIButton!
+        
+        @IBOutlet weak var sh: UIButton!
+        @IBOutlet weak var g: UIButton!
+        @IBOutlet weak var a: UIButton!
+        
+        @IBOutlet weak var o: UIButton!
+        
+        @IBOutlet weak var an: UIButton!
+        
+        @IBOutlet weak var f: UIButton!
+        
+        @IBOutlet weak var re: UIButton!
+        
+    
     override func viewDidLoad() {
         check_in_button.layer.cornerRadius = 10
         check_in_button.clipsToBounds = true
@@ -36,7 +62,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
         print(emailField.text ?? "no email")
         print(passwordField.text ?? "no password")
-      
+        
+        
         
     }
     
@@ -85,6 +112,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let introVC = storyboard?.instantiateViewController(withIdentifier: "IntroViewController")
         self.present(introVC!, animated:true, completion: nil)
     }
+    
+    
+
+    
+  
+    
     
 
 }
