@@ -1042,6 +1042,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cbf-DQ-aO3"/>
                     </view>
+                    <connections>
+                        <outlet property="a" destination="19N-oA-5gD" id="7Hg-k4-Kaf"/>
+                        <outlet property="an" destination="89D-4t-T6N" id="zV2-d1-hJ8"/>
+                        <outlet property="compassionate" destination="WWe-cO-0HH" id="NMF-7N-ZIg"/>
+                        <outlet property="f" destination="Nj0-bo-hNU" id="eSw-gV-dVt"/>
+                        <outlet property="g" destination="UEF-WP-zGJ" id="lph-rb-CFk"/>
+                        <outlet property="h" destination="l9Y-Y0-TBP" id="4NG-I2-4nL"/>
+                        <outlet property="joyful" destination="EuR-Qp-uXy" id="Axn-jw-Nmo"/>
+                        <outlet property="l" destination="IIV-ax-WIP" id="ZK6-LP-eVd"/>
+                        <outlet property="o" destination="IVf-Xi-tl1" id="ZVe-12-Cgy"/>
+                        <outlet property="p" destination="e2S-fg-1PR" id="UKg-gE-nk1"/>
+                        <outlet property="r" destination="nnO-Ly-FrW" id="cQq-2e-H6b"/>
+                        <outlet property="re" destination="WJr-3R-eK0" id="ANg-d9-oJj"/>
+                        <outlet property="s" destination="Bsm-P1-Hbz" id="3iN-B9-taB"/>
+                        <outlet property="sc" destination="YpT-g1-TMh" id="l3x-Zj-KVy"/>
+                        <outlet property="sh" destination="9J2-fX-uLE" id="kae-aR-xOS"/>
+                        <outlet property="st" destination="3rf-eH-fmp" id="oWj-7T-cNY"/>
+                        <outlet property="u" destination="ur6-dY-K7T" id="vFW-KN-cQJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJO-wd-0KF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
