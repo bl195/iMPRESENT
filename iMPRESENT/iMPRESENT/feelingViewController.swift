@@ -37,7 +37,6 @@ class feelingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(self.title)
         
         compassionate.backgroundColor = .clear
         compassionate.layer.cornerRadius = 10

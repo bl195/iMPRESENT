@@ -14,7 +14,7 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
     @IBOutlet weak var discoverMoreCollectionView: UICollectionView!
     @IBOutlet weak var collectionView: UICollectionView!
     var names = ["Body Scan", "Loving Kindness", "Inner Focus"]
-    var discoverMore = ["Self Compassion Break", "Inner Focus","Grow Yourself","Accepting & Letting Go","Body Scan","Loving Kindness"]
+    var discoverMore = ["Meditation for Fertility", "Wisdom of Future Self","Letting Go & Letting Be","Body Scan","Loving Kindness","Affectionate Breathing"]
     var images = ["Plant","Think","Lily","Plant","Think","Lily"]
     
     
@@ -73,9 +73,10 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
         if collectionView == self.discoverMoreCollectionView {
             if let cell = discoverMoreCollectionView.dequeueReusableCell(withReuseIdentifier: MeditationCollectionViewCell.reuseIdentifier,
                                                                          for: indexPath) as? MeditationCollectionViewCell {
-                let name = discoverMore[indexPath.row]
-                let pic = images[indexPath.row]
-                cell.configureCell(name: name, image: pic)
+                //let name = discoverMore[indexPath.row]
+                //let pic = images[indexPath.row]
+                let med = meditations[indexPath.row]
+                cell.configureCell(name: med.title, image: med.image!)
                 return cell
             }
             return UICollectionViewCell()
@@ -118,15 +119,11 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == self.discoverMoreCollectionView {
-            print("here")
             let medVC = storyboard?.instantiateViewController(withIdentifier: "MeditationViewController") as? MeditationViewController
             let currMeditation = meditations[indexPath.row]
-            print(currMeditation.title)
             medVC?.meditation = currMeditation.title
-            medVC?.image = UIImage(named: currMeditation.image ?? "Lilly")!
+            medVC?.image = UIImage(named: currMeditation.image ?? "Lily")!
             present(medVC!, animated: true)
-            
-            
         }
     }
     
