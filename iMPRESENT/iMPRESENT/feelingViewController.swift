@@ -37,6 +37,8 @@ class feelingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(self.title)
+        
         compassionate.backgroundColor = .clear
         compassionate.layer.cornerRadius = 10
         compassionate.layer.borderWidth = 1
@@ -127,6 +129,20 @@ class feelingViewController: UIViewController {
         //            .layer.borderColor = UIColor.white.cgColor
         
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func compassionPressed(_ sender: Any) {
+        if (self.title! == "firstFeelingViewController") {
+            let meditateVC = storyboard?.instantiateViewController(withIdentifier: "MeditationFeedViewController") as? MeditationFeedViewController
+            present(meditateVC!, animated: true)
+            
+        } else {
+            let streakVC = storyboard?.instantiateViewController(withIdentifier: "StreakViewController") as? StreakViewController
+            present(streakVC!, animated: true)
+            
+        }
+       
     }
     
 

@@ -18,8 +18,23 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
     var images = ["Plant","Think","Lily","Plant","Think","Lily"]
     
     
+    var meditations: [Meditation] = []
+    
+    func createMeditations() {
+        var index = 0
+        for discover in discoverMore {
+            meditations.append(Meditation.init(title: discover, file: "", image: images[index]))
+            index += 1
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        createMeditations()
+        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
         registerNib()
         collectionView.contentInset = UIEdgeInsets.init(top: 25, left: 15, bottom: 0, right: 15)
         discoverMoreCollectionView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
@@ -98,6 +113,20 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
             cell.setNeedsLayout()
             cell.layoutIfNeeded()
             return CGSize(width: 155, height: 110)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == self.discoverMoreCollectionView {
+            print("here")
+            let medVC = storyboard?.instantiateViewController(withIdentifier: "MeditationViewController") as? MeditationViewController
+            let currMeditation = meditations[indexPath.row]
+            print(currMeditation.title)
+            medVC?.meditation = currMeditation.title
+            medVC?.image = UIImage(named: currMeditation.image ?? "Lilly")!
+            present(medVC!, animated: true)
+            
+            
         }
     }
     

@@ -27,6 +27,8 @@
 		C80F9A08237F1F5800488E69 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F9A07237F1F5800488E69 /* CustomSlider.swift */; };
 		C8A2C6F223664B1600411435 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2C6F123664B1600411435 /* IntroViewController.swift */; };
 		C8A2C6F4236692F500411435 /* StressLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2C6F3236692F500411435 /* StressLevelViewController.swift */; };
+		C8B472D623864BBF00D2EB34 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B472D523864BBF00D2EB34 /* MeditationViewController.swift */; };
+		C8B472D82386636400D2EB34 /* StreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B472D72386636400D2EB34 /* StreakViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		C80F9A07237F1F5800488E69 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		C8A2C6F123664B1600411435 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		C8A2C6F3236692F500411435 /* StressLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelViewController.swift; sourceTree = "<group>"; };
+		C8B472D523864BBF00D2EB34 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		C8B472D72386636400D2EB34 /* StreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 				C8A2C6F123664B1600411435 /* IntroViewController.swift */,
 				C8A2C6F3236692F500411435 /* StressLevelViewController.swift */,
 				C80F9A07237F1F5800488E69 /* CustomSlider.swift */,
+				C8B472D523864BBF00D2EB34 /* MeditationViewController.swift */,
+				C8B472D72386636400D2EB34 /* StreakViewController.swift */,
 			);
 			path = iMPRESENT;
 			sourceTree = "<group>";
@@ -306,7 +312,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B472D82386636400D2EB34 /* StreakViewController.swift in Sources */,
 				C8A2C6F223664B1600411435 /* IntroViewController.swift in Sources */,
+				C8B472D623864BBF00D2EB34 /* MeditationViewController.swift in Sources */,
 				BEDC204B2381A54D0066333F /* MeditationFeedViewController.swift in Sources */,
 				C80F9A08237F1F5800488E69 /* CustomSlider.swift in Sources */,
 				C8A2C6F4236692F500411435 /* StressLevelViewController.swift in Sources */,
