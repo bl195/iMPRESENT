@@ -53,6 +53,12 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
         }
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath){
+        print("ayyy")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == self.discoverMoreCollectionView {

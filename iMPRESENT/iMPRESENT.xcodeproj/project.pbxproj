@@ -16,6 +16,12 @@
 		BEF46ACF2381ACB200D57635 /* PastMeditationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF46ACD2381ACB200D57635 /* PastMeditationCollectionViewCell.xib */; };
 		BEF46AD12381D70300D57635 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF46AD02381D70300D57635 /* Meditation.swift */; };
 		BEF46AD32381D80A00D57635 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF46AD22381D80A00D57635 /* Items.swift */; };
+		BEF46AD72386336900D57635 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF46AD62386336900D57635 /* MeditationViewController.swift */; };
+		BEF46AD92386370F00D57635 /* Body Scan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46AD82386370F00D57635 /* Body Scan.mp3 */; };
+		BEF46AE12386378C00D57635 /* Meditation for Fertility.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46ADD2386378C00D57635 /* Meditation for Fertility.mp3 */; };
+		BEF46AE22386378C00D57635 /* Affectionate Breathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46ADE2386378C00D57635 /* Affectionate Breathing.mp3 */; };
+		BEF46AE32386378C00D57635 /* Letting Go and Letting Be.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46ADF2386378C00D57635 /* Letting Go and Letting Be.mp3 */; };
+		BEF46AE42386378C00D57635 /* Wisdom of Your Future Self.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46AE02386378C00D57635 /* Wisdom of Your Future Self.mp3 */; };
 		C7AC6A8923663D2F00542250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC6A8823663D2F00542250 /* AppDelegate.swift */; };
 		C7AC6A8B23663D2F00542250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC6A8A23663D2F00542250 /* ViewController.swift */; };
 		C7AC6A8E23663D2F00542250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AC6A8C23663D2F00542250 /* Main.storyboard */; };
@@ -56,6 +62,12 @@
 		BEF46ACD2381ACB200D57635 /* PastMeditationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastMeditationCollectionViewCell.xib; sourceTree = "<group>"; };
 		BEF46AD02381D70300D57635 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
 		BEF46AD22381D80A00D57635 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		BEF46AD62386336900D57635 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		BEF46AD82386370F00D57635 /* Body Scan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Body Scan.mp3"; sourceTree = "<group>"; };
+		BEF46ADD2386378C00D57635 /* Meditation for Fertility.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Meditation for Fertility.mp3"; path = "iMPRESENT/Assets.xcassets/Meditation for Fertility.mp3"; sourceTree = SOURCE_ROOT; };
+		BEF46ADE2386378C00D57635 /* Affectionate Breathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Affectionate Breathing.mp3"; path = "iMPRESENT/Assets.xcassets/Affectionate Breathing.mp3"; sourceTree = SOURCE_ROOT; };
+		BEF46ADF2386378C00D57635 /* Letting Go and Letting Be.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Letting Go and Letting Be.mp3"; path = "iMPRESENT/Assets.xcassets/Letting Go and Letting Be.mp3"; sourceTree = SOURCE_ROOT; };
+		BEF46AE02386378C00D57635 /* Wisdom of Your Future Self.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Wisdom of Your Future Self.mp3"; path = "iMPRESENT/Assets.xcassets/Wisdom of Your Future Self.mp3"; sourceTree = SOURCE_ROOT; };
 		C7AC6A8523663D2F00542250 /* iMPRESENT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMPRESENT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AC6A8823663D2F00542250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7AC6A8A23663D2F00542250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +126,18 @@
 			path = "Meditation Feed";
 			sourceTree = "<group>";
 		};
+		BEF46ADC2386376B00D57635 /* Meditation Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEF46ADE2386378C00D57635 /* Affectionate Breathing.mp3 */,
+				BEF46ADF2386378C00D57635 /* Letting Go and Letting Be.mp3 */,
+				BEF46ADD2386378C00D57635 /* Meditation for Fertility.mp3 */,
+				BEF46AE02386378C00D57635 /* Wisdom of Your Future Self.mp3 */,
+				BEF46AD82386370F00D57635 /* Body Scan.mp3 */,
+			);
+			path = "Meditation Files";
+			sourceTree = "<group>";
+		};
 		C7AC6A7C23663D2F00542250 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +165,8 @@
 				C7AC6A8A23663D2F00542250 /* ViewController.swift */,
 				258166A0236645EF0039FDE1 /* MainTableViewController.swift */,
 				C7BBF008238384980083DCED /* feelingViewController.swift */,
+				BEF46AD62386336900D57635 /* MeditationViewController.swift */,
+				BEF46ADC2386376B00D57635 /* Meditation Files */,
 				C7AC6A8C23663D2F00542250 /* Main.storyboard */,
 				BEDC204C2381A5540066333F /* Meditation Feed */,
 				2581669E2366436D0039FDE1 /* LuizaTemp.storyboard */,
@@ -279,9 +305,14 @@
 				C7AC6A9323663D3100542250 /* LaunchScreen.storyboard in Resources */,
 				BEF46ACB2381ACA500D57635 /* MeditationCollectionViewCell.xib in Resources */,
 				C7AC6A9023663D3100542250 /* Assets.xcassets in Resources */,
+				BEF46AE12386378C00D57635 /* Meditation for Fertility.mp3 in Resources */,
+				BEF46AD92386370F00D57635 /* Body Scan.mp3 in Resources */,
 				2581669F2366436D0039FDE1 /* LuizaTemp.storyboard in Resources */,
+				BEF46AE22386378C00D57635 /* Affectionate Breathing.mp3 in Resources */,
 				BEF46ACF2381ACB200D57635 /* PastMeditationCollectionViewCell.xib in Resources */,
 				C7AC6A8E23663D2F00542250 /* Main.storyboard in Resources */,
+				BEF46AE32386378C00D57635 /* Letting Go and Letting Be.mp3 in Resources */,
+				BEF46AE42386378C00D57635 /* Wisdom of Your Future Self.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +339,7 @@
 			files = (
 				C8A2C6F223664B1600411435 /* IntroViewController.swift in Sources */,
 				BEDC204B2381A54D0066333F /* MeditationFeedViewController.swift in Sources */,
+				BEF46AD72386336900D57635 /* MeditationViewController.swift in Sources */,
 				C80F9A08237F1F5800488E69 /* CustomSlider.swift in Sources */,
 				C8A2C6F4236692F500411435 /* StressLevelViewController.swift in Sources */,
 				BEF46ACE2381ACB200D57635 /* PastMeditationCollectionViewCell.swift in Sources */,
