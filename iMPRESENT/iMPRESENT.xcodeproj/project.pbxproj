@@ -16,6 +16,12 @@
 		BEF46ACF2381ACB200D57635 /* PastMeditationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF46ACD2381ACB200D57635 /* PastMeditationCollectionViewCell.xib */; };
 		BEF46AD12381D70300D57635 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF46AD02381D70300D57635 /* Meditation.swift */; };
 		BEF46AD32381D80A00D57635 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF46AD22381D80A00D57635 /* Items.swift */; };
+		BEF46AEB23871F0D00D57635 /* Wisdom of Your Future Self.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46AE523871F0D00D57635 /* Wisdom of Your Future Self.mp3 */; };
+		BEF46AEC23871F0D00D57635 /* Letting Go and Letting Be.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46AE623871F0D00D57635 /* Letting Go and Letting Be.mp3 */; };
+		BEF46AED23871F0D00D57635 /* Affectionate Breathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46AE723871F0D00D57635 /* Affectionate Breathing.mp3 */; };
+		BEF46AEE23871F0D00D57635 /* Body Scan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46AE823871F0D00D57635 /* Body Scan.mp3 */; };
+		BEF46AEF23871F0D00D57635 /* Loving Kindness Meditation for Self Compassion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46AE923871F0D00D57635 /* Loving Kindness Meditation for Self Compassion.mp3 */; };
+		BEF46AF023871F0D00D57635 /* Meditation for Fertility.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF46AEA23871F0D00D57635 /* Meditation for Fertility.mp3 */; };
 		C7AC6A8923663D2F00542250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC6A8823663D2F00542250 /* AppDelegate.swift */; };
 		C7AC6A8B23663D2F00542250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC6A8A23663D2F00542250 /* ViewController.swift */; };
 		C7AC6A8E23663D2F00542250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AC6A8C23663D2F00542250 /* Main.storyboard */; };
@@ -58,6 +64,12 @@
 		BEF46ACD2381ACB200D57635 /* PastMeditationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastMeditationCollectionViewCell.xib; sourceTree = "<group>"; };
 		BEF46AD02381D70300D57635 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
 		BEF46AD22381D80A00D57635 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		BEF46AE523871F0D00D57635 /* Wisdom of Your Future Self.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Wisdom of Your Future Self.mp3"; path = "../../iMpresent meditations-selected/Wisdom of Your Future Self.mp3"; sourceTree = "<group>"; };
+		BEF46AE623871F0D00D57635 /* Letting Go and Letting Be.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Letting Go and Letting Be.mp3"; path = "../../iMpresent meditations-selected/Letting Go and Letting Be.mp3"; sourceTree = "<group>"; };
+		BEF46AE723871F0D00D57635 /* Affectionate Breathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Affectionate Breathing.mp3"; path = "../../iMpresent meditations-selected/Affectionate Breathing.mp3"; sourceTree = "<group>"; };
+		BEF46AE823871F0D00D57635 /* Body Scan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Body Scan.mp3"; path = "../../iMpresent meditations-selected/Body Scan.mp3"; sourceTree = "<group>"; };
+		BEF46AE923871F0D00D57635 /* Loving Kindness Meditation for Self Compassion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Loving Kindness Meditation for Self Compassion.mp3"; path = "../../iMpresent meditations-selected/Loving Kindness Meditation for Self Compassion.mp3"; sourceTree = "<group>"; };
+		BEF46AEA23871F0D00D57635 /* Meditation for Fertility.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Meditation for Fertility.mp3"; path = "../../iMpresent meditations-selected/Meditation for Fertility.mp3"; sourceTree = "<group>"; };
 		C7AC6A8523663D2F00542250 /* iMPRESENT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMPRESENT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AC6A8823663D2F00542250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7AC6A8A23663D2F00542250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +157,12 @@
 				C7AC6A8A23663D2F00542250 /* ViewController.swift */,
 				258166A0236645EF0039FDE1 /* MainTableViewController.swift */,
 				C7BBF008238384980083DCED /* feelingViewController.swift */,
+				BEF46AE723871F0D00D57635 /* Affectionate Breathing.mp3 */,
+				BEF46AE823871F0D00D57635 /* Body Scan.mp3 */,
+				BEF46AE623871F0D00D57635 /* Letting Go and Letting Be.mp3 */,
+				BEF46AE923871F0D00D57635 /* Loving Kindness Meditation for Self Compassion.mp3 */,
+				BEF46AEA23871F0D00D57635 /* Meditation for Fertility.mp3 */,
+				BEF46AE523871F0D00D57635 /* Wisdom of Your Future Self.mp3 */,
 				C7AC6A8C23663D2F00542250 /* Main.storyboard */,
 				BEDC204C2381A5540066333F /* Meditation Feed */,
 				2581669E2366436D0039FDE1 /* LuizaTemp.storyboard */,
@@ -282,12 +300,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF46AEE23871F0D00D57635 /* Body Scan.mp3 in Resources */,
 				C7AC6A9323663D3100542250 /* LaunchScreen.storyboard in Resources */,
+				BEF46AEF23871F0D00D57635 /* Loving Kindness Meditation for Self Compassion.mp3 in Resources */,
+				BEF46AEC23871F0D00D57635 /* Letting Go and Letting Be.mp3 in Resources */,
 				BEF46ACB2381ACA500D57635 /* MeditationCollectionViewCell.xib in Resources */,
 				C7AC6A9023663D3100542250 /* Assets.xcassets in Resources */,
 				2581669F2366436D0039FDE1 /* LuizaTemp.storyboard in Resources */,
+				BEF46AEB23871F0D00D57635 /* Wisdom of Your Future Self.mp3 in Resources */,
+				BEF46AED23871F0D00D57635 /* Affectionate Breathing.mp3 in Resources */,
 				BEF46ACF2381ACB200D57635 /* PastMeditationCollectionViewCell.xib in Resources */,
 				C7AC6A8E23663D2F00542250 /* Main.storyboard in Resources */,
+				BEF46AF023871F0D00D57635 /* Meditation for Fertility.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
