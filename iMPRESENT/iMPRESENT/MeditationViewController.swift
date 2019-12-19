@@ -80,17 +80,20 @@ class MeditationViewController: UIViewController {
     @IBAction func playButtonPressed(_ sender: Any) {
         if presscount == 0{
             playSound()
-            playButton.titleLabel?.text = "PAUSE"
+            //playButton.titleLabel?.text = "PAUSE"
+            self.playButton.setTitle("PAUSE", for: .normal)
 
         }
         else if presscount % 2 == 0{
             self.player?.play()
             //playSound()
-            self.playButton.titleLabel?.text = "PAUSE"
+            //self.playButton.titleLabel?.text = "PAUSE"
+            self.playButton.setTitle("PAUSE", for: .normal)
 
         } else {
             self.player?.pause()
-            self.playButton.titleLabel?.text = "PLAY"
+            //self.playButton.titleLabel?.text = "PLAY"
+            self.playButton.setTitle("PLAY", for: .normal)
 
         }
         presscount += 1
