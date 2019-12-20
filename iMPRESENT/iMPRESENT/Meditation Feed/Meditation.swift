@@ -8,7 +8,14 @@
 
 import Foundation
 
-class Meditation{
+class Meditation:Equatable{
+    
+    static func == (lhs: Meditation, rhs: Meditation) -> Bool {
+        if lhs.title == rhs.title {
+            return true
+        }
+        return false
+    }
     var title: String
     var file: String?
     var image: String?

@@ -134,6 +134,9 @@ class feelingViewController: UIViewController {
     @IBAction func compassionPressed(_ sender: Any) {
         if (self.title! == "firstFeelingViewController") {
             let meditateVC = storyboard?.instantiateViewController(withIdentifier: "MeditationFeedViewController") as? MeditationFeedViewController
+            
+            Items.sharedInstance.emotion = "compassionate"
+            
             present(meditateVC!, animated: true)
             
         } else {

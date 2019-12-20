@@ -37,18 +37,31 @@ class MeditationViewController: UIViewController {
         super.viewDidLoad()
         meditationImage.image = self.image
         meditationName.text = meditation
-        meditationName.numberOfLines = 0
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4
         paragraphStyle.alignment = .center
         meditationName.attributedText = NSAttributedString(string: meditation.uppercased(), attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle,
             NSAttributedString.Key.kern: 5.0, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 30)!])
+         meditationName.numberOfLines = 0
         
         playButton.layer.cornerRadius = playButton.bounds.height/2
         playButton.clipsToBounds = true
         
         whiteBackground.layer.cornerRadius = 20
         whiteBackground.clipsToBounds = true
+        
+        //updating the meditation
+        Items.sharedInstance.meditation = self.meditation
+        print(Items.sharedInstance.meditation)
+        
+        //updating the current time 
+        let currentDateTime = Date()
+        let formatter = DateFormatter()
+        formatter.timeStyle = .medium
+        formatter.dateStyle = .none
+        let curr_time = formatter.string(from: currentDateTime)
+        Items.sharedInstance.datetime = curr_time
+        
         //updateAudioProgressView()
         
         

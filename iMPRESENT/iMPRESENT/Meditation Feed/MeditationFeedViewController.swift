@@ -19,6 +19,8 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
     
     
     var meditations: [Meditation] = []
+    var pastMeds: [Meditation] = []
+    
     
     func createMeditations() {
         var index = 0
@@ -27,6 +29,7 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
             index += 1
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,6 +68,7 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
             return discoverMore.count
         } else {
             return names.count
+           
         }
     }
     
@@ -123,6 +127,9 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
             let currMeditation = meditations[indexPath.row]
             medVC?.meditation = currMeditation.title
             medVC?.image = UIImage(named: currMeditation.image ?? "Lily")!
+            
+           
+            
             present(medVC!, animated: true)
         }
     }

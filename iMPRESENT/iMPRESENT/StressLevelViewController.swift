@@ -10,7 +10,7 @@ import UIKit
 
 class StressLevelViewController: UIViewController {
     
-
+    var stress = 0
     @IBOutlet weak var stressLevel: UILabel!
     
     @IBOutlet weak var stress_slider_level: UISlider!
@@ -20,24 +20,14 @@ class StressLevelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //stress_slider_level.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / 2))
-        
-//        happyfaceImage = happyfaceImage?.rotate(radians: -1.0*(.pi / 2))
-//        sadfaceImage = sadfaceImage?.rotate(radians: -1.0*(.pi / 2))
-        
         changeSliderImage(img: happyfaceImage!)
-        
-        
-       
-        
 
     }
     
     
     @IBAction func sliderAction(_ sender: Any) {
-        print(round (stress_slider_level.value))
-       let float = round (stress_slider_level.value)
-        stressLevel.text = "\(float)"
+        stress = Int(round (stress_slider_level.value))
+        stressLevel.text = "\(stress)"
         
         let slider_val = round (stress_slider_level.value)
         
@@ -52,6 +42,22 @@ class StressLevelViewController: UIViewController {
     func changeSliderImage(img: UIImage) {
         stress_slider_level.setThumbImage(img, for: .normal)
         stress_slider_level.setThumbImage(img, for: .highlighted)
+    }
+    
+    
+    @IBAction func nextButton(_ sender: Any) {
+       
+        if (self.title! == "StressLevelViewController") {
+            Items.sharedInstance.stressLevelBefore = stress
+            let feelingVC = storyboard?.instantiateViewController(withIdentifier: "firstFeelingViewController") as? feelingViewController
+            present(feelingVC!, animated: true)
+            
+        } else {
+            Items.sharedInstance.stressLevelAfter = stress
+            let streakVC = storyboard?.instantiateViewController(withIdentifier: "StreakViewController") as? StreakViewController
+            present(streakVC!, animated: true)
+        }
+       
     }
     
     

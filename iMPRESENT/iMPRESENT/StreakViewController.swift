@@ -52,18 +52,50 @@ class StreakViewController: UIViewController {
         if (day > 6)  { //Sat
             satImg.image = UIImage(named: "check")
         }
+        
+        print(Items.sharedInstance.user)
+        print(Items.sharedInstance.datetime)
+        print(Items.sharedInstance.stressLevelBefore)
+        print(Items.sharedInstance.emotion)
+        print(Items.sharedInstance.meditation)
+        print(Items.sharedInstance.stressLevelAfter)
+        
+        //self.createMed(_for: "", user: Items.sharedInstance.user, datetime: Items.sharedInstance.datetime, stressLevelBefore: Items.sharedInstance.stressLevelBefore, emotion: Items.sharedInstance.emotion, meditation: Items.sharedInstance.meditation, stressLevelAfter: Items.sharedInstance.stressLevelAfter)
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func createMed(_for URLString:String, user: String, datetime: String, stressLevelBefore: Double, emotion: String, meditation: String, stressLevelAfter: Double) {
+        
+        guard let url = URL(string: URLString) else {return}
+        
+        var request : URLRequest = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        let params = ["user": user, "datetime": datetime, "stresslevelbefore": stressLevelBefore, "stresslevelafter": stressLevelAfter, "emotions": emotion, "meditation": meditation] as [String : Any]
+        
+        let jsonData = try! JSONSerialization.data(withJSONObject: params, options: [])
+        request.httpBody = jsonData
+        print("jsonData: ", String(data: request.httpBody!, encoding: .utf8) ?? "no body data")
+        
+        
+        let session = URLSession.shared
+        let task = session.dataTask(with: request) { (responseData, response, responseError) in
+            
+            // APIs usually respond with the data you just sent in your POST request
+            if let responseData = responseData {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: responseData, options: [])
+                    print(json)
+                } catch {
+                    print(responseError)
+                }
+            }
+        }
+        task.resume()
+        
     }
-    */
 
 }
 

@@ -16,6 +16,13 @@ class Items{
     var discoverMore = ["Self Compassion Break", "Inner Focus","Grow Yourself","Accepting & Letting Go","Body Scan","Loving Kindness"]
     var images = ["Plant","Think","Lily","Plant","Think","Lily"]
     
+    var user = ""
+    var datetime = ""
+    var stressLevelBefore = 0
+    var emotion = ""
+    var meditation = ""
+    var stressLevelAfter = 0
+    
 //    {
 //        for name in names{
 //            let med = Meditation.init(title: name, file: "", image: "")
