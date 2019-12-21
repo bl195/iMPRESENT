@@ -487,7 +487,7 @@
                                             <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="jDF-Vx-EbF" kind="presentation" id="9ky-uo-z9x"/>
+                                            <action selector="nextButton:" destination="qTT-1v-fzS" eventType="touchUpInside" id="6UP-2Z-jIq"/>
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="asA-zj-z6m">
@@ -605,7 +605,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="compassionPressed:" destination="HJO-b7-7sj" eventType="touchUpInside" id="yfr-9S-ZUb"/>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="w1S-VS-y17"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Td-Pb-eej">
@@ -620,6 +620,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="MC6-y8-qU1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glz-1V-s7Q">
                                 <rect key="frame" x="29" y="644" width="162" height="53"/>
@@ -633,6 +636,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="70e-bm-Bfi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49w-8E-S4g">
                                 <rect key="frame" x="29" y="784" width="179" height="53"/>
@@ -646,6 +652,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="8Xr-mr-edt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpe-dh-0rf">
                                 <rect key="frame" x="29" y="434" width="149" height="53"/>
@@ -659,6 +668,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="Oyp-mF-fto"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isB-ch-N1g">
                                 <rect key="frame" x="29" y="574" width="149" height="53"/>
@@ -672,6 +684,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="6j5-Uq-YOl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTA-bc-8HO">
                                 <rect key="frame" x="29" y="504" width="88" height="53"/>
@@ -685,6 +700,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="HaI-s6-6fL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIQ-92-cb4">
                                 <rect key="frame" x="140" y="504" width="100" height="53"/>
@@ -698,6 +716,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="7Bx-uG-pAh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKE-ep-GCP">
                                 <rect key="frame" x="264" y="504" width="130" height="53"/>
@@ -711,6 +732,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="Y5l-hH-X3K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muv-Qv-BdX">
                                 <rect key="frame" x="212" y="364" width="173" height="53"/>
@@ -724,6 +748,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="ygy-Fv-3Dh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5T-Qb-vFv">
                                 <rect key="frame" x="212" y="644" width="173" height="53"/>
@@ -737,6 +764,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="NAp-iz-68Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7g-OW-DG1">
                                 <rect key="frame" x="200" y="434" width="185" height="53"/>
@@ -750,6 +780,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="70i-WI-LQK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLY-PG-nWg">
                                 <rect key="frame" x="200" y="574" width="185" height="53"/>
@@ -763,6 +796,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="jXZ-7a-kfO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chu-nY-KaV">
                                 <rect key="frame" x="247" y="294" width="138" height="53"/>
@@ -776,6 +812,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="R7b-vH-1R2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd6-6S-fEg">
                                 <rect key="frame" x="247" y="714" width="138" height="53"/>
@@ -789,6 +828,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="eLg-cO-vZL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l01-80-gvp">
                                 <rect key="frame" x="29" y="714" width="196" height="53"/>
@@ -802,6 +844,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="FPP-5s-qcx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uth-0l-DZp">
                                 <rect key="frame" x="229" y="784" width="156" height="53"/>
@@ -811,10 +856,20 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Resilient">
+                                <state key="normal" title="Distracted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelingsButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="6fI-1E-PnG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6N-8Q-9pD">
+                                <rect key="frame" x="323" y="48" width="50" height="50"/>
+                                <state key="normal" image="arrow"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="HJO-b7-7sj" eventType="touchUpInside" id="8Tg-yt-ucG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -823,7 +878,9 @@
                             <constraint firstItem="sqd-Pb-sFs" firstAttribute="top" relation="lessThanOrEqual" secondItem="D0f-Eb-1be" secondAttribute="bottom" constant="94" id="3Du-ei-pJs"/>
                             <constraint firstAttribute="bottom" secondItem="uTu-Ay-xhO" secondAttribute="bottom" id="3TI-qj-Udj"/>
                             <constraint firstItem="D0f-Eb-1be" firstAttribute="leading" secondItem="jag-8p-fvd" secondAttribute="leading" constant="29" id="77t-tU-op0"/>
+                            <constraint firstItem="W6N-8Q-9pD" firstAttribute="leading" secondItem="uTu-Ay-xhO" secondAttribute="trailing" constant="-91" id="7qG-fZ-Wqh"/>
                             <constraint firstItem="jag-8p-fvd" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Uth-0l-DZp" secondAttribute="bottom" constant="25" id="8SI-Hz-ety"/>
+                            <constraint firstItem="uTu-Ay-xhO" firstAttribute="top" secondItem="W6N-8Q-9pD" secondAttribute="bottom" constant="-98" id="91h-8W-F7r"/>
                             <constraint firstItem="G7g-OW-DG1" firstAttribute="leading" secondItem="Zpe-dh-0rf" secondAttribute="trailing" constant="22" id="Bhc-EF-WMS"/>
                             <constraint firstItem="uTu-Ay-xhO" firstAttribute="trailing" secondItem="jag-8p-fvd" secondAttribute="trailing" id="CWT-Si-UoT"/>
                             <constraint firstItem="LLY-PG-nWg" firstAttribute="top" secondItem="wKE-ep-GCP" secondAttribute="bottom" constant="17" id="Fmx-QQ-JwP"/>
@@ -890,7 +947,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQD-Pc-KNM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2419" y="120"/>
+            <point key="canvasLocation" x="2418.840579710145" y="119.86607142857142"/>
         </scene>
         <!--StreakViewController-->
         <scene sceneID="y89-qd-oqF">
@@ -1149,9 +1206,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="compassionPressed:" destination="AcN-fd-e4l" eventType="touchUpInside" id="K4G-9q-2c6"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xg-LC-wZK">
                                 <rect key="frame" x="29" y="364" width="162" height="53"/>

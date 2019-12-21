@@ -50,17 +50,7 @@ class MeditationViewController: UIViewController {
         whiteBackground.layer.cornerRadius = 20
         whiteBackground.clipsToBounds = true
         
-        //updating the meditation
-        Items.sharedInstance.meditation = self.meditation
-        print(Items.sharedInstance.meditation)
-        
-        //updating the current time 
-        let currentDateTime = Date()
-        let formatter = DateFormatter()
-        formatter.timeStyle = .medium
-        formatter.dateStyle = .none
-        let curr_time = formatter.string(from: currentDateTime)
-        Items.sharedInstance.datetime = curr_time
+       
         
         //updateAudioProgressView()
         
@@ -148,7 +138,25 @@ class MeditationViewController: UIViewController {
     }
     
     
-
+    
+    
+    @IBAction func nextButton(_ sender: Any) {
+        //updating the meditation
+        Items.sharedInstance.meditation = self.meditation
+        print(Items.sharedInstance.meditation)
+        
+        //updating the current time
+        let currentDateTime = Date()
+        let formatter = DateFormatter()
+        formatter.timeStyle = .medium
+        formatter.dateStyle = .medium
+        let curr_time = formatter.string(from: currentDateTime)
+        Items.sharedInstance.datetime = curr_time
+        
+        let afterStressLevelVC = storyboard?.instantiateViewController(withIdentifier: "afterStressLevelViewController") as? StressLevelViewController
+        present(afterStressLevelVC!, animated: true)
+    }
+    
     
 //    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 //        if keyPath == "currentItem.loadedTimeRanges" {

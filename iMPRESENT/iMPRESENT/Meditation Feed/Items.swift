@@ -19,6 +19,7 @@ class Items{
     var user = ""
     var datetime = ""
     var stressLevelBefore = 0
+   
     var emotion = ""
     var meditation = ""
     var stressLevelAfter = 0
