@@ -35,6 +35,9 @@ class feelingViewController: UIViewController {
     
     @IBOutlet weak var re: UIButton!
     
+    var emotions: [String] = []
+    var finalEmotions = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -129,30 +132,104 @@ class feelingViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+
+    var count = 0
     
-    
-    @IBAction func compassionPressed(_ sender: Any) {
-        if (self.title! == "firstFeelingViewController") {
+    @IBAction func feelingsButton(_ sender: UIButton) {
+        
+        switch sender {
+            case compassionate:
+                self.emotions.append("compassionate")
+                break
+            case joyful:
+                print("JOY")
+                self.emotions.append("joyful")
+                break
+            case p:
+                self.emotions.append("at peace")
+                break
+            case h:
+                self.emotions.append("hopeful")
+                break
+            case u:
+                self.emotions.append("uncertain")
+                break
+            case r:
+                self.emotions.append("resilient")
+                break
+            case s:
+                self.emotions.append("sad")
+                break
+            case l:
+                self.emotions.append("lonely")
+                break
+            case st:
+                self.emotions.append("stressed")
+                break
+            case sc:
+                self.emotions.append("scared")
+                break
+            case sh:
+                self.emotions.append("shameful")
+                break
+            case g:
+                self.emotions.append("gloomy")
+                break
+            case a:
+                self.emotions.append("anxious")
+                break
+            case o:
+                self.emotions.append("out of control")
+                break
+            case an:
+                self.emotions.append("angry")
+                break
+            case f:
+                self.emotions.append("frustrated")
+                break
+            default:
+                self.emotions.append("distracted")
+                break
+        }
+        sender.backgroundColor = UIColor.gray
+        count = count + 1
+        if (count >= 3) {
+            var index = 0
+            while index < 3 {
+                if (index == 2) {
+                    self.finalEmotions = self.finalEmotions + emotions[index]
+                }
+                else {
+                    self.finalEmotions = self.finalEmotions + emotions[index] + ", "
+                }
+                index = index + 1
+            }
+            print (finalEmotions)
+            Items.sharedInstance.emotion = self.finalEmotions
             let meditateVC = storyboard?.instantiateViewController(withIdentifier: "MeditationFeedViewController") as? MeditationFeedViewController
             present(meditateVC!, animated: true)
-            
-        } else {
-            let streakVC = storyboard?.instantiateViewController(withIdentifier: "StreakViewController") as? StreakViewController
-            present(streakVC!, animated: true)
-            
         }
-       
+
+    }
+    
+    
+    
+    @IBAction func nextButton(_ sender: Any) {
+        var i = 0
+        while i < emotions.count {
+            if (i == emotions.count - 1) {
+                self.finalEmotions = self.finalEmotions + emotions[i]
+            }
+            else {
+                self.finalEmotions = self.finalEmotions + emotions[i] + ", "
+            }
+            i = i + 1
+        }
+        Items.sharedInstance.emotion = self.finalEmotions
+        let meditateVC = storyboard?.instantiateViewController(withIdentifier: "MeditationFeedViewController") as? MeditationFeedViewController
+        present(meditateVC!, animated: true)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

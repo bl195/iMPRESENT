@@ -37,18 +37,21 @@ class MeditationViewController: UIViewController {
         super.viewDidLoad()
         meditationImage.image = self.image
         meditationName.text = meditation
-        meditationName.numberOfLines = 0
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4
         paragraphStyle.alignment = .center
         meditationName.attributedText = NSAttributedString(string: meditation.uppercased(), attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle,
             NSAttributedString.Key.kern: 5.0, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 30)!])
+         meditationName.numberOfLines = 0
         
         playButton.layer.cornerRadius = playButton.bounds.height/2
         playButton.clipsToBounds = true
         
         whiteBackground.layer.cornerRadius = 20
         whiteBackground.clipsToBounds = true
+        
+       
+        
         //updateAudioProgressView()
         
         
@@ -80,17 +83,20 @@ class MeditationViewController: UIViewController {
     @IBAction func playButtonPressed(_ sender: Any) {
         if presscount == 0{
             playSound()
-            playButton.titleLabel?.text = "PAUSE"
+            //playButton.titleLabel?.text = "PAUSE"
+            self.playButton.setTitle("PAUSE", for: .normal)
 
         }
         else if presscount % 2 == 0{
             self.player?.play()
             //playSound()
-            self.playButton.titleLabel?.text = "PAUSE"
+            //self.playButton.titleLabel?.text = "PAUSE"
+            self.playButton.setTitle("PAUSE", for: .normal)
 
         } else {
             self.player?.pause()
-            self.playButton.titleLabel?.text = "PLAY"
+            //self.playButton.titleLabel?.text = "PLAY"
+            self.playButton.setTitle("PLAY", for: .normal)
 
         }
         presscount += 1
@@ -132,7 +138,25 @@ class MeditationViewController: UIViewController {
     }
     
     
-
+    
+    
+    @IBAction func nextButton(_ sender: Any) {
+        //updating the meditation
+        Items.sharedInstance.meditation = self.meditation
+        print(Items.sharedInstance.meditation)
+        
+        //updating the current time
+        let currentDateTime = Date()
+        let formatter = DateFormatter()
+        formatter.timeStyle = .medium
+        formatter.dateStyle = .medium
+        let curr_time = formatter.string(from: currentDateTime)
+        Items.sharedInstance.datetime = curr_time
+        
+        let afterStressLevelVC = storyboard?.instantiateViewController(withIdentifier: "afterStressLevelViewController") as? StressLevelViewController
+        present(afterStressLevelVC!, animated: true)
+    }
+    
     
 //    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 //        if keyPath == "currentItem.loadedTimeRanges" {

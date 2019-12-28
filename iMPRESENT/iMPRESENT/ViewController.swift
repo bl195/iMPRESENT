@@ -60,8 +60,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordField.delegate = self
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print(emailField.text ?? "no email")
-        print(passwordField.text ?? "no password")
+        
+       
         
         
         
@@ -108,6 +108,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func checkIn(_ sender: Any) {
         print(emailField.text ?? "no email")
         print(passwordField.text ?? "no password")
+        Items.sharedInstance.user = emailField.text ?? "no email"
         
         let introVC = storyboard?.instantiateViewController(withIdentifier: "IntroViewController")
         self.present(introVC!, animated:true, completion: nil)
