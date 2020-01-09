@@ -60,12 +60,12 @@ class StreakViewController: UIViewController {
         print(Items.sharedInstance.meditation)
         print(Items.sharedInstance.stressLevelAfter)
         
-        //self.createMed(_for: "", user: Items.sharedInstance.user, datetime: Items.sharedInstance.datetime, stressLevelBefore: Items.sharedInstance.stressLevelBefore, emotion: Items.sharedInstance.emotion, meditation: Items.sharedInstance.meditation, stressLevelAfter: Items.sharedInstance.stressLevelAfter)
+        self.createMed(_for: "https://impresent.appspot.com/meditations/", user: Items.sharedInstance.user, datetime: Items.sharedInstance.datetime, stressLevelBefore: Items.sharedInstance.stressLevelBefore, emotion: Items.sharedInstance.emotion, meditation: Items.sharedInstance.meditation, stressLevelAfter: Items.sharedInstance.stressLevelAfter)
         
     }
     
 
-    func createMed(_for URLString:String, user: String, datetime: String, stressLevelBefore: Double, emotion: String, meditation: String, stressLevelAfter: Double) {
+    func createMed(_for URLString:String, user: String, datetime: String, stressLevelBefore: Int, emotion: String, meditation: String, stressLevelAfter: Int) {
         
         guard let url = URL(string: URLString) else {return}
         
@@ -73,7 +73,7 @@ class StreakViewController: UIViewController {
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        let params = ["user": user, "datetime": datetime, "stresslevelbefore": stressLevelBefore, "stresslevelafter": stressLevelAfter, "emotions": emotion, "meditation": meditation] as [String : Any]
+        let params = ["user": user, "datetime": datetime, "stressbefore": stressLevelBefore, "stressafter": stressLevelAfter, "emotions": emotion, "meditation": meditation] as [String : Any]
         
         let jsonData = try! JSONSerialization.data(withJSONObject: params, options: [])
         request.httpBody = jsonData
