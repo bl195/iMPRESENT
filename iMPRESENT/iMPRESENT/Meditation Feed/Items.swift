@@ -9,6 +9,8 @@
 import Foundation
 
 class Items{
+    
+    // i dont think this is doing anything, delete later
     static let sharedInstance = Items()
     var meditations = [Meditation]()
     var pastMeditations = [Meditation]()

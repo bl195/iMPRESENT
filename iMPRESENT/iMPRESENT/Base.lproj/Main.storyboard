@@ -515,6 +515,7 @@
                                             <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="backButton:" destination="qTT-1v-fzS" eventType="touchUpInside" id="X7y-6J-xbn"/>
                                             <segue destination="M98-t8-5Eh" kind="presentation" id="lqI-TE-Skm"/>
                                         </connections>
                                     </button>

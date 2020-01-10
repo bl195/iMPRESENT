@@ -14,7 +14,7 @@ class MeditationFeedViewController: UIViewController, UICollectionViewDataSource
     @IBOutlet weak var discoverMoreCollectionView: UICollectionView!
     @IBOutlet weak var collectionView: UICollectionView!
     var names = ["Body Scan", "Loving Kindness", "Inner Focus"]
-    var discoverMore = ["Meditation for Fertility", "Wisdom of Future Self","Letting Go & Letting Be","Body Scan","Loving Kindness","Affectionate Breathing"]
+    var discoverMore = ["Meditation for Fertility", "Wisdom of Your Future Self","Letting Go & Letting Be","Body Scan","Loving Kindness for Self Compassion","Affectionate Breathing"]
     var images = ["Plant","Think","Lily","Plant","Think","Lily"]
     
     

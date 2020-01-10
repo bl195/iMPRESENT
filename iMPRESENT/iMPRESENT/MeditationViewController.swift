@@ -50,6 +50,7 @@ class MeditationViewController: UIViewController {
         whiteBackground.layer.cornerRadius = 20
         whiteBackground.clipsToBounds = true
         
+        self.initSound()
        
         
         //updateAudioProgressView()
@@ -102,24 +103,16 @@ class MeditationViewController: UIViewController {
         presscount += 1
     }
     
-    func playSound() {
-        print("HERE")
-        print(meditation)
+    func initSound(){
         guard let url = Bundle.main.url(forResource: meditation, withExtension: "mp3") else { return }
         
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
-            
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            
-            /* iOS 10 and earlier require the following line:
-             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
             
             guard let player = player else { return }
             
-            player.play()
             timer = Timer.scheduledTimer(timeInterval: 0.0001, target: self, selector: #selector(self.updateAudioProgressView), userInfo: nil, repeats: true)
             progressBar.setProgress(Float(player.currentTime / player.duration), animated: false)
             
@@ -129,8 +122,22 @@ class MeditationViewController: UIViewController {
             
             endTime.text = String(format: "%02d:%02d", minutes,seconds) as String
             
-//            player.addObserver(self, forKeyPath: "currentItem.loadedTimeRanges", options: .new, context: nil)
-//            let interval = CMTime(value: 1, timescale: 2)
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: meditation, withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            guard let player = player else { return }
+            
+            player.play()
             
         } catch let error {
             print(error.localizedDescription)
@@ -157,15 +164,10 @@ class MeditationViewController: UIViewController {
         present(afterStressLevelVC!, animated: true)
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        self.player?.stop()
+    }
     
-//    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-//        if keyPath == "currentItem.loadedTimeRanges" {
-//            if let duration = self.player?.currentTime {
-//                let seconds = duration
-//                let secondsText = Int(seconds) % 60
-//                let minutesText = String(format: "%02d", Int(seconds) / 60)
-//            }
-//        }
-//    }
+
 
 }
