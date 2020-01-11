@@ -60,7 +60,8 @@ class StreakViewController: UIViewController {
         print(Items.sharedInstance.meditation)
         print(Items.sharedInstance.stressLevelAfter)
         
-        self.createMed(_for: "https://impresent.appspot.com/meditations/", user: Items.sharedInstance.user, datetime: Items.sharedInstance.datetime, stressLevelBefore: Items.sharedInstance.stressLevelBefore, emotion: Items.sharedInstance.emotion, meditation: Items.sharedInstance.meditation, stressLevelAfter: Items.sharedInstance.stressLevelAfter)
+        let url = "https://lit-wave-61686.herokuapp.com/meditations"
+        self.createMed(_for: url, user: Items.sharedInstance.user, datetime: Items.sharedInstance.datetime, stressLevelBefore: Items.sharedInstance.stressLevelBefore, emotion: Items.sharedInstance.emotion, meditation: Items.sharedInstance.meditation, stressLevelAfter: Items.sharedInstance.stressLevelAfter)
         
     }
     
