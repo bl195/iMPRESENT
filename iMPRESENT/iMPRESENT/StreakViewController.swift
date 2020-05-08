@@ -8,6 +8,13 @@
 
 import UIKit
 
+/**
+ This class is responsible for displaying the
+ number of days in a row that a user has
+ completed meditations. It is also responsible
+ for sending all the information (user, feelings, meditation, etc.)
+ to the database.
+ */
 class StreakViewController: UIViewController {
     
     
@@ -21,51 +28,51 @@ class StreakViewController: UIViewController {
     @IBOutlet weak var satImg: UIImageView!
     @IBOutlet weak var sunImg: UIImageView!
     
+    var checkImage = UIImage(named: "check")
+    var apiLink = "https://lit-wave-61686.herokuapp.com/meditations"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let day = Date().dayNumberOfWeek()!
         // Do any additional setup after loading the view.
         if (day == 1)   {//Sunday
-            monImg.image = UIImage(named: "check")
-            tuesImg.image = UIImage(named: "check")
-            wedImg.image = UIImage(named: "check")
-            thursImg.image = UIImage(named: "check")
-            friImg.image = UIImage(named: "check")
-            satImg.image = UIImage(named: "check")
-            sunImg.image = UIImage(named: "check")
+            monImg.image = checkImage
+            tuesImg.image = checkImage
+            wedImg.image = checkImage
+            thursImg.image = checkImage
+            friImg.image = checkImage
+            satImg.image = checkImage
+            sunImg.image = checkImage
         }
         if (day > 1)  { //Monday
-             monImg.image = UIImage(named: "check")
+             monImg.image = checkImage
         }
         if (day > 2)  { //Tues
-            tuesImg.image = UIImage(named: "check")
+            tuesImg.image = checkImage
         }
         if (day > 3) { //Wed
-            wedImg.image = UIImage(named: "check")
+            wedImg.image = checkImage
         }
         if (day > 4) { //Thurs
-            thursImg.image = UIImage(named: "check")
+            thursImg.image = checkImage
         }
         if (day > 5)  { //Fri
-            friImg.image = UIImage(named: "check")
+            friImg.image = checkImage
         }
         if (day > 6)  { //Sat
-            satImg.image = UIImage(named: "check")
+            satImg.image = checkImage
         }
-        
-        print(Items.sharedInstance.user)
-        print(Items.sharedInstance.datetime)
-        print(Items.sharedInstance.stressLevelBefore)
-        print(Items.sharedInstance.emotion)
-        print(Items.sharedInstance.meditation)
-        print(Items.sharedInstance.stressLevelAfter)
-        
-        let url = "https://lit-wave-61686.herokuapp.com/meditations"
-        self.createMed(_for: url, user: Items.sharedInstance.user, datetime: Items.sharedInstance.datetime, stressLevelBefore: Items.sharedInstance.stressLevelBefore, emotion: Items.sharedInstance.emotion, meditation: Items.sharedInstance.meditation, stressLevelAfter: Items.sharedInstance.stressLevelAfter)
-        
+
+        self.createMed(_for: apiLink, user: Items.sharedInstance.user, datetime: Items.sharedInstance.datetime, stressLevelBefore: Items.sharedInstance.stressLevelBefore, emotion: Items.sharedInstance.emotion, meditation: Items.sharedInstance.meditation, stressLevelAfter: Items.sharedInstance.stressLevelAfter)
     }
     
 
+    /**
+        This function is responsible for creating a meditation
+     in the database by sending a post request with information
+     about the user, access time, stress level before/after, emotions,
+     and the meditation chosen 
+    */
     func createMed(_for URLString:String, user: String, datetime: String, stressLevelBefore: Int, emotion: String, meditation: String, stressLevelAfter: Int) {
         
         guard let url = URL(string: URLString) else {return}
@@ -80,17 +87,14 @@ class StreakViewController: UIViewController {
         request.httpBody = jsonData
         print("jsonData: ", String(data: request.httpBody!, encoding: .utf8) ?? "no body data")
         
-        
         let session = URLSession.shared
         let task = session.dataTask(with: request) { (responseData, response, responseError) in
-            
-            // APIs usually respond with the data you just sent in your POST request
             if let responseData = responseData {
                 do {
                     let json = try JSONSerialization.jsonObject(with: responseData, options: [])
                     print(json)
                 } catch {
-                    print(responseError)
+                    print(responseError ?? "error")
                 }
             }
         }

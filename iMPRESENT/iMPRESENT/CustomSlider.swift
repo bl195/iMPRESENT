@@ -8,15 +8,12 @@
 
 import UIKit
 
+/**
+    This class is responsible for creating the custom slider
+ seen on the StressLevelViewController screens 
+ */
 class CustomSlider: UISlider {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
     @IBInspectable open var trackWidth:CGFloat = 2 {
         didSet {setNeedsDisplay()}
     }

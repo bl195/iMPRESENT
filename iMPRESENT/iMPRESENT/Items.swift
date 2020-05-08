@@ -7,10 +7,15 @@
 //
 
 import Foundation
-
+/**
+    The purpose of this class
+ is to create a global shared instance
+ that multiple controllers can modify. This is useful
+ for creating a single object that can store the data
+ needed to be sent to the database on a single run of the app. 
+ */
 class Items{
     
-    // i dont think this is doing anything, delete later
     static let sharedInstance = Items()
     var meditations = [Meditation]()
     var pastMeditations = [Meditation]()
@@ -18,26 +23,15 @@ class Items{
     var discoverMore = ["Self Compassion Break", "Inner Focus","Grow Yourself","Accepting & Letting Go","Body Scan","Loving Kindness"]
     var images = ["Plant","Think","Lily","Plant","Think","Lily"]
     
+    //used to keep track of information throughout different screens
+    //that will eventually be sent to database
     var user = ""
     var datetime = ""
     var stressLevelBefore = 0
-   
     var emotion = ""
     var meditation = ""
     var stressLevelAfter = 0
     
-//    {
-//        for name in names{
-//            let med = Meditation.init(title: name, file: "", image: "")
-//            pastMeditations.append(med)
-//        }
-//        for i in (0...discoverMore.count){
-//            let title = discoverMore[i]
-//            let image = images[i]
-//            let med = Meditation.init(title: title, image: image, file: "")
-//            meditations.append(med)
-//        }
-//    }
 }
 
 

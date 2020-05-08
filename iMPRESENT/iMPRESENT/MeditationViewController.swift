@@ -41,7 +41,7 @@ class MeditationViewController: UIViewController {
         paragraphStyle.lineSpacing = 4
         paragraphStyle.alignment = .center
         meditationName.attributedText = NSAttributedString(string: meditation.uppercased(), attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle,
-            NSAttributedString.Key.kern: 5.0, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 30)!])
+            NSAttributedString.Key.kern: 5.0, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 16)!])
          meditationName.numberOfLines = 0
         
         playButton.layer.cornerRadius = playButton.bounds.height/2
@@ -51,23 +51,12 @@ class MeditationViewController: UIViewController {
         whiteBackground.clipsToBounds = true
         
         self.initSound()
-       
-        
-        //updateAudioProgressView()
-        
-        
-//        let currentTimeLabel: UILabel = {
-//            let label = UILabel()
-//            label.text = "00:00"
-//        }
-        //progressBar.setProgress(Float(player!.currentTime / player!.duration), animated: false)
 
     }
     
     
     @objc func updateAudioProgressView()
     {
-        //print(player!.currentTime)
         if player!.isPlaying
         {
             progressBar.setProgress(Float(player!.currentTime / player!.duration), animated: false)
@@ -84,19 +73,14 @@ class MeditationViewController: UIViewController {
     @IBAction func playButtonPressed(_ sender: Any) {
         if presscount == 0{
             playSound()
-            //playButton.titleLabel?.text = "PAUSE"
             self.playButton.setTitle("PAUSE", for: .normal)
-
         }
         else if presscount % 2 == 0{
             self.player?.play()
-            //playSound()
-            //self.playButton.titleLabel?.text = "PAUSE"
             self.playButton.setTitle("PAUSE", for: .normal)
 
         } else {
             self.player?.pause()
-            //self.playButton.titleLabel?.text = "PLAY"
             self.playButton.setTitle("PLAY", for: .normal)
 
         }

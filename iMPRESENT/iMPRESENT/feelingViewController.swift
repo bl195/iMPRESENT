@@ -110,27 +110,6 @@ class feelingViewController: UIViewController {
         re.layer.borderWidth = 1
         re.layer.borderColor = UIColor.white.cgColor
         
-        //        let bgcolor = hexStringToUIColor(hex: "#012169")
-        //        let bgcolor1 = hexStringToUIColor(hex: "#00539B")
-        //        let layer = CAGradientLayer()
-        //
-        //        layer.frame = view.bounds
-        //
-        //        layer.colors = [bgcolor.cgColor, bgcolor1.cgColor]
-        //
-        //        layer.startPoint = CGPoint(x:0,y:0)
-        //
-        //        layer.endPoint = CGPoint(x:1,y:1)
-        //
-        //        view.layer.addSublayer(layer)
-        //        // Do any additional setup after loading the view.
-        
-        //            .backgroundColor = .clear
-        //            .layer.cornerRadius = 10
-        //            .layer.borderWidth = 1
-        //            .layer.borderColor = UIColor.white.cgColor
-        
-        // Do any additional setup after loading the view.
     }
 
     var count = 0

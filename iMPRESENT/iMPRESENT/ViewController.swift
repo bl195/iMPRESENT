@@ -2,56 +2,27 @@
 //  ViewController.swift
 //  iMPRESENT
 //
-//  Created by Brian Li on 10/27/19.
+//  Created by Jessica Su on 10/27/19.
 //  Copyright © 2019 CodePlus. All rights reserved.
 //
 
 import UIKit
 
+/**
+    This class displays the log-in screen for iMPRESENT.
+ It includes the name of the app, an image, and fields
+ for the user to enter a username and password. 
+ */
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var check_in_button: UIButton!
-    
     @IBOutlet weak var passwordField: UITextField!
-    
     @IBOutlet weak var passwordLabel: UILabel!
-    
     @IBOutlet weak var emailField: UITextField!
-    
     @IBOutlet weak var emailLabel: UILabel!
-    
-    
     @IBOutlet weak var impresentLabel: UILabel!
-    
-    
     @IBOutlet weak var teardropImg: UIImageView!
-    
-        @IBOutlet weak var joyful: UIButton!
-     
-        @IBOutlet weak var compassionate: UIButton!
-        @IBOutlet weak var p: UIButton!
-        @IBOutlet weak var h: UIButton!
-        @IBOutlet weak var u: UIButton!
-        @IBOutlet weak var r: UIButton!
-        @IBOutlet weak var s: UIButton!
-        @IBOutlet weak var l: UIButton!
-        
-        @IBOutlet weak var st: UIButton!
-        @IBOutlet weak var sc: UIButton!
-        
-        @IBOutlet weak var sh: UIButton!
-        @IBOutlet weak var g: UIButton!
-        @IBOutlet weak var a: UIButton!
-        
-        @IBOutlet weak var o: UIButton!
-        
-        @IBOutlet weak var an: UIButton!
-        
-        @IBOutlet weak var f: UIButton!
-        
-        @IBOutlet weak var re: UIButton!
-        
-    
+
     override func viewDidLoad() {
         check_in_button.layer.cornerRadius = 10
         check_in_button.clipsToBounds = true
@@ -59,14 +30,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         emailField.delegate = self
         passwordField.delegate = self
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-       
-        
-        
         
     }
     
+    /**
+        automatically sets the cursor to the password field
+        once the user hits enter on the email field
+    */
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == emailField {
             emailField.resignFirstResponder()
@@ -78,6 +48,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    /**
+        sets up the layout constraints for the visual components
+     (title of app, image, email/password log-in, and check-in button
+    */
     private func setUpLayout() {
         let topImageContainerView = UIView()
         //topImageContainerView.backgroundColor = .blue
@@ -104,22 +78,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    
+    /**
+        When a user clicks on the check-in button, then the
+     email entered will be saved to later be sent to the database
+    */
     @IBAction func checkIn(_ sender: Any) {
-        print(emailField.text ?? "no email")
-        print(passwordField.text ?? "no password")
         Items.sharedInstance.user = emailField.text ?? "no email"
-        
         let introVC = storyboard?.instantiateViewController(withIdentifier: "IntroViewController")
         self.present(introVC!, animated:true, completion: nil)
     }
-    
-    
-
-    
-  
-    
-    
 
 }
 

@@ -36,6 +36,6 @@ class MeditationCollectionViewCell: UICollectionViewCell {
     func configureCell(name: String, image: String) {
         self.title.text = name
         self.image.image = UIImage(named: image)
-        self.title.attributedText = NSAttributedString(string: name.uppercased(), attributes: [NSAttributedString.Key.kern: 5.0, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 14)!])
+        self.title.attributedText = NSAttributedString(string: name.uppercased(), attributes: [NSAttributedString.Key.kern: 5.0, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 10)!])
     }
 }

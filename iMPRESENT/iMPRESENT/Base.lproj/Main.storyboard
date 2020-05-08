@@ -154,7 +154,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lr-hY-ZeC">
-                                <rect key="frame" x="361" y="758" width="16" height="22"/>
+                                <rect key="frame" x="327" y="730" width="50" height="50"/>
                                 <state key="normal" image="arrow">
                                     <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -385,11 +385,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0q1-Im-l6X">
-                                <rect key="frame" x="19" y="423" width="375" height="473"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="473" id="ONI-np-Eet"/>
-                                    <constraint firstAttribute="width" constant="375" id="sP8-9b-HjS"/>
-                                </constraints>
+                                <rect key="frame" x="19" y="423" width="385" height="473"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZLP-Sg-FkD">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -429,14 +425,15 @@
                             <constraint firstItem="ueM-gk-pDg" firstAttribute="top" secondItem="OGf-gj-b4u" secondAttribute="top" constant="100" id="Csr-AS-5oJ"/>
                             <constraint firstItem="OGf-gj-b4u" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FUv-Jr-1ga" secondAttribute="trailing" symbolic="YES" id="DR2-Sg-CSv"/>
                             <constraint firstItem="NyI-aA-RFC" firstAttribute="top" secondItem="OGf-gj-b4u" secondAttribute="top" constant="38" id="Mi0-Zi-g6R"/>
+                            <constraint firstAttribute="bottom" secondItem="0q1-Im-l6X" secondAttribute="bottom" id="RA5-pH-EU5"/>
                             <constraint firstItem="qh1-rD-Rfs" firstAttribute="leading" secondItem="FUv-Jr-1ga" secondAttribute="leading" id="Tdg-fW-oLf"/>
                             <constraint firstItem="FUv-Jr-1ga" firstAttribute="top" secondItem="ueM-gk-pDg" secondAttribute="top" constant="10" id="XaZ-qs-1lw"/>
                             <constraint firstItem="OGf-gj-b4u" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NyI-aA-RFC" secondAttribute="trailing" symbolic="YES" id="Yq5-VZ-AoL"/>
                             <constraint firstItem="FUv-Jr-1ga" firstAttribute="leading" secondItem="OGf-gj-b4u" secondAttribute="leading" constant="19" id="ah5-1y-ErA"/>
                             <constraint firstItem="0q1-Im-l6X" firstAttribute="leading" secondItem="qh1-rD-Rfs" secondAttribute="leading" id="bgt-qf-Ig7"/>
                             <constraint firstItem="OGf-gj-b4u" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qh1-rD-Rfs" secondAttribute="trailing" symbolic="YES" id="csW-eh-OPw"/>
+                            <constraint firstItem="OGf-gj-b4u" firstAttribute="trailing" secondItem="0q1-Im-l6X" secondAttribute="trailing" constant="10" id="ge4-F0-Flk"/>
                             <constraint firstItem="qh1-rD-Rfs" firstAttribute="top" secondItem="ueM-gk-pDg" secondAttribute="bottom" constant="21" id="q0Q-ir-5QD"/>
-                            <constraint firstItem="OGf-gj-b4u" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="0q1-Im-l6X" secondAttribute="trailing" constant="20" id="swe-I8-WJ9"/>
                             <constraint firstItem="0q1-Im-l6X" firstAttribute="top" secondItem="qh1-rD-Rfs" secondAttribute="bottom" constant="21" id="tex-v9-hvE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OGf-gj-b4u"/>
@@ -483,7 +480,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqM-Um-hI3">
-                                        <rect key="frame" x="317" y="692" width="16" height="22"/>
+                                        <rect key="frame" x="283" y="664" width="50" height="50"/>
                                         <state key="normal" image="arrow">
                                             <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -511,7 +508,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyw-Um-WkG">
-                                        <rect key="frame" x="48" y="37" width="16" height="22"/>
+                                        <rect key="frame" x="48" y="37" width="45" height="45"/>
                                         <state key="normal" image="backArrow">
                                             <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -544,7 +541,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M E D I T A T I O N               N A M E " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5A-Xg-qW4">
                                 <rect key="frame" x="43.5" y="183" width="327" height="66"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="28"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
                                 <color key="textColor" red="0.0039215686269999999" green="0.12941176469999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -552,7 +549,7 @@
                         <color key="backgroundColor" red="0.0039215686269999999" green="0.12941176469999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="tTZ-c1-PZy" firstAttribute="top" secondItem="NnI-3Q-xTZ" secondAttribute="top" constant="18" id="AzY-kq-yWr"/>
-                            <constraint firstItem="S5A-Xg-qW4" firstAttribute="top" secondItem="NnI-3Q-xTZ" secondAttribute="top" constant="139" id="E3W-cw-mfg"/>
+                            <constraint firstItem="S5A-Xg-qW4" firstAttribute="top" relation="lessThanOrEqual" secondItem="NnI-3Q-xTZ" secondAttribute="top" constant="139" id="E3W-cw-mfg"/>
                             <constraint firstItem="S5A-Xg-qW4" firstAttribute="leading" secondItem="NnI-3Q-xTZ" secondAttribute="leading" constant="43.5" id="E51-n1-ake"/>
                             <constraint firstItem="S5A-Xg-qW4" firstAttribute="centerX" secondItem="NnI-3Q-xTZ" secondAttribute="centerX" id="OhP-dU-4Mc"/>
                             <constraint firstItem="tTZ-c1-PZy" firstAttribute="centerX" secondItem="NnI-3Q-xTZ" secondAttribute="centerX" id="Sfh-8o-hj6"/>

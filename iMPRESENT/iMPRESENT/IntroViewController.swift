@@ -8,7 +8,14 @@
 
 import UIKit
 
+/**
+    This class displays the introduction to meditation
+ screen, which includes a button that links to a YouTube
+ video giving a brief overview of meditation.
+ */
 class IntroViewController: UIViewController {
+    
+    var meditationVideoLink = "https://www.youtube.com/watch?v=CmhkmLFc74E"
 
     @IBOutlet weak var introLabel: UILabel!
     
@@ -27,19 +34,14 @@ class IntroViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func playVideo(_ sender: Any) {
-        UIApplication.shared.open(URL(string: "https://www.youtube.com/watch?v=CmhkmLFc74E")!, options: [:], completionHandler: nil)
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+    /**
+        After clicking the button "play", the user will listen
+     to a YouTube video that introduces the importance of meditation.
     */
+    @IBAction func playVideo(_ sender: Any) {
+        UIApplication.shared.open(URL(string: meditationVideoLink)!, options: [:], completionHandler: nil)
+    }
+    
+
 
 }

@@ -8,9 +8,16 @@
 
 import UIKit
 
+/**
+    This class creates a slider where the user
+ can rate his/her level of stress before and after
+ listening to a meditation. 
+ */
 class StressLevelViewController: UIViewController {
     
     var stress = 0
+    var halfStressLevel = 5
+    
     @IBOutlet weak var stressLevel: UILabel!
     
     @IBOutlet weak var stress_slider_level: UISlider!
@@ -19,34 +26,46 @@ class StressLevelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         changeSliderImage(img: happyfaceImage!)
 
     }
     
-    
+    /**
+        This function responds to the user's interaction
+     with the slider by changing the text below the slider
+     to match the level chosen and also change the image
+     if the user is more stressed than the halfway point
+    */
     @IBAction func sliderAction(_ sender: Any) {
         stress = Int(round (stress_slider_level.value))
         stressLevel.text = "\(stress)"
         
         let slider_val = round (stress_slider_level.value)
         
-        if (slider_val < 5) {
+        if (Int(slider_val) < halfStressLevel) {
              changeSliderImage(img: happyfaceImage!)
         }
-        if (slider_val >= 5) {
+        if (Int(slider_val) >= halfStressLevel) {
             changeSliderImage(img: sadfaceImage!)
         }
     }
     
+    /**
+        This function changes the slider's image
+     as the user moves past the halfway point
+    */
     func changeSliderImage(img: UIImage) {
         stress_slider_level.setThumbImage(img, for: .normal)
         stress_slider_level.setThumbImage(img, for: .highlighted)
     }
     
-    
+    /**
+        This function is responsbile for controlling
+     which screen appears next after the stress level view controller -
+     it is presented both BEFORE hearing the meditation and AFTER
+     the meditation
+    */
     @IBAction func nextButton(_ sender: Any) {
-       
         if (self.title! == "StressLevelViewController") {
             Items.sharedInstance.stressLevelBefore = stress
             let feelingVC = storyboard?.instantiateViewController(withIdentifier: "firstFeelingViewController") as? feelingViewController
@@ -59,18 +78,6 @@ class StressLevelViewController: UIViewController {
         }
        
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 extension UIImage {
     func rotate(radians: Float) -> UIImage? {
