@@ -26,6 +26,12 @@ class Items{
     var meditation = ""
     var stressLevelAfter = 0
     
+    var webroot = "http://localhost:3000"
+    //var webroot = "https://lit-wave-61686.herokuapp.com"
+    
+    var appKey = "password"
+    //var appKey = "C5Q#yE462dVB9s2S"
+    
 //    {
 //        for name in names{
 //            let med = Meditation.init(title: name, file: "", image: "")

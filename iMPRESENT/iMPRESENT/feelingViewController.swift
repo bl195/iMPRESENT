@@ -193,10 +193,10 @@ class feelingViewController: UIViewController {
         }
         sender.backgroundColor = UIColor.gray
         count = count + 1
-        if (count >= 3) {
+        if (count >= 5) {
             var index = 0
-            while index < 3 {
-                if (index == 2) {
+            while index < 5 {
+                if (index == 4) {
                     self.finalEmotions = self.finalEmotions + emotions[index]
                 }
                 else {

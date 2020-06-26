@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iMPRESENT/Meditation Feed/MeditationFeedViewController.swift"
-            timestampString = "600370602.736885"
+            timestampString = "600475246.230548"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "registerNib()"
             landmarkType = "7">
          </BreakpointContent>
@@ -22,48 +22,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iMPRESENT/Meditation Feed/MeditationFeedViewController.swift"
-            timestampString = "600370602.7369519"
+            filePath = "iMPRESENT/ViewController.swift"
+            timestampString = "614895638.189628"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "registerNib()"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "validate(withCompletion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iMPRESENT/Meditation Feed/MeditationFeedViewController.swift"
-            timestampString = "600370602.736997"
+            filePath = "iMPRESENT/ViewController.swift"
+            timestampString = "614895638.189844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "registerNib()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iMPRESENT/Meditation Feed/MeditationFeedViewController.swift"
-            timestampString = "600370602.737039"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "registerNib()"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "validate(withCompletion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
