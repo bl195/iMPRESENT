@@ -114,6 +114,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BECC370224A6D28300B51FDF /* Meditations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Meditations;
+			sourceTree = "<group>";
+		};
 		BEDC204C2381A5540066333F /* Meditation Feed */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +130,6 @@
 				BEF46ACC2381ACB200D57635 /* PastMeditationCollectionViewCell.swift */,
 				BEF46ACD2381ACB200D57635 /* PastMeditationCollectionViewCell.xib */,
 				BEF46AD02381D70300D57635 /* Meditation.swift */,
-				BEF46AD22381D80A00D57635 /* Items.swift */,
 			);
 			path = "Meditation Feed";
 			sourceTree = "<group>";
@@ -158,10 +164,12 @@
 				BEF46AE723871F0D00D57635 /* Affectionate Breathing.mp3 */,
 				BEF46AE823871F0D00D57635 /* Body Scan.mp3 */,
 				BEF46AE623871F0D00D57635 /* Letting Go & Letting Be.mp3 */,
+				BECC370224A6D28300B51FDF /* Meditations */,
 				BEF46AE923871F0D00D57635 /* Loving Kindness for Self Compassion.mp3 */,
 				BEF46AEA23871F0D00D57635 /* Meditation for Fertility.mp3 */,
 				BEF46AE523871F0D00D57635 /* Wisdom of Your Future Self.mp3 */,
 				C7AC6A8C23663D2F00542250 /* Main.storyboard */,
+				BEF46AD22381D80A00D57635 /* Items.swift */,
 				BEDC204C2381A5540066333F /* Meditation Feed */,
 				C7AC6A8F23663D3100542250 /* Assets.xcassets */,
 				C7AC6A9123663D3100542250 /* LaunchScreen.storyboard */,
